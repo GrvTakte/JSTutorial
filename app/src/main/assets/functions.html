@@ -1,0 +1,150 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<h2>What is function?</h2>
+<p>A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.</p>
+<p>Like any other advanced programming language, JavaScript also supports all the features necessary to write modular code using functions. You must have seen functions like&nbsp;<strong>alert()</strong>&nbsp;and&nbsp;<strong>write()</strong>&nbsp;in the earlier chapters. We were using these functions again and again, but they had been written in core JavaScript only once.</p>
+<p>JavaScript allows us to write our own functions as well. This section explains how to write your own functions in JavaScript.</p>
+<h2>Function Definition</h2>
+<p>Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the&nbsp;<strong>function</strong>&nbsp;keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.</p>
+<h3>Syntax</h3>
+<p>The basic syntax is shown here.</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+   <span class="pun">&lt;!--</span>
+      <span class="kwd">function</span><span class="pln"> functionname</span><span class="pun">(</span><span class="pln">parameter</span><span class="pun">-</span><span class="pln">list</span><span class="pun">)</span>
+      <span class="pun">{</span><span class="pln">
+         statements
+      </span><span class="pun">}</span>
+   <span class="com">//--&gt;</span>
+<span class="tag">&lt;/script&gt;</span></pre>
+<h3>Example</h3>
+<p>Try the following example. It defines a function called sayHello that takes no parameters &minus;</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+   <span class="pun">&lt;!--</span>
+      <span class="kwd">function</span><span class="pln"> sayHello</span><span class="pun">()</span>
+      <span class="pun">{</span><span class="pln">
+         alert</span><span class="pun">(</span><span class="str">"Hello there"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+   <span class="com">//--&gt;</span>
+<span class="tag">&lt;/script&gt;</span></pre>
+<h2>Calling a Function</h2>
+<p>To invoke a function somewhere later in the script, you would simply need to write the name of that function as shown in the following code.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span>
+   <span class="tag">&lt;head&gt;</span>
+
+      <span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+         <span class="kwd">function</span><span class="pln"> sayHello</span><span class="pun">()</span>
+         <span class="pun">{</span><span class="pln">
+            document</span><span class="pun">.</span><span class="pln">write </span><span class="pun">(</span><span class="str">"Hello there!"</span><span class="pun">);</span>
+         <span class="pun">}</span>
+      <span class="tag">&lt;/script&gt;</span>
+
+   <span class="tag">&lt;/head&gt;</span>
+   <span class="tag">&lt;body&gt;</span>
+      <span class="tag">&lt;p&gt;</span><span class="pln">Click the following button to call the function</span><span class="tag">&lt;/p&gt;</span>
+
+      <span class="tag">&lt;form&gt;</span>
+         <span class="tag">&lt;input</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span> <span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">sayHello</span><span class="pun">()</span><span class="atv">"</span> <span class="atn">value</span><span class="pun">=</span><span class="atv">"Say Hello"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;/form&gt;</span>
+
+      <span class="tag">&lt;p&gt;</span><span class="pln">Use different text in write method and then try...</span><span class="tag">&lt;/p&gt;</span>
+   <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+<h2>Function Parameters</h2>
+<p>Till now, we have seen functions without parameters. But there is a facility to pass different parameters while calling a function. These passed parameters can be captured inside the function and any manipulation can be done over those parameters. A function can take multiple parameters separated by comma.</p>
+<h3>Example</h3>
+<p>Try the following example. We have modified our&nbsp;<strong>sayHello</strong>&nbsp;function here. Now it takes two parameters.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span>
+   <span class="tag">&lt;head&gt;</span>
+
+      <span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+         <span class="kwd">function</span><span class="pln"> sayHello</span><span class="pun">(</span><span class="pln">name</span><span class="pun">,</span><span class="pln"> age</span><span class="pun">)</span>
+         <span class="pun">{</span><span class="pln">
+            document</span><span class="pun">.</span><span class="pln">write </span><span class="pun">(</span><span class="pln">name </span><span class="pun">+</span> <span class="str">" is "</span> <span class="pun">+</span><span class="pln"> age </span><span class="pun">+</span> <span class="str">" years old."</span><span class="pun">);</span>
+         <span class="pun">}</span>
+      <span class="tag">&lt;/script&gt;</span>
+
+   <span class="tag">&lt;/head&gt;</span>
+   <span class="tag">&lt;body&gt;</span>
+      <span class="tag">&lt;p&gt;</span><span class="pln">Click the following button to call the function</span><span class="tag">&lt;/p&gt;</span>
+
+      <span class="tag">&lt;form&gt;</span>
+         <span class="tag">&lt;input</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span> <span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">sayHello</span><span class="pun">(</span><span class="str">'Zara'</span><span class="pun">,</span> <span class="lit">7</span><span class="pun">)</span><span class="atv">"</span> <span class="atn">value</span><span class="pun">=</span><span class="atv">"Say Hello"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;/form&gt;</span>
+
+      <span class="tag">&lt;p&gt;</span><span class="pln">Use different parameters inside the function and then try...</span><span class="tag">&lt;/p&gt;</span>
+   <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+<h2>The return Statement</h2>
+<p>A JavaScript function can have an optional&nbsp;<strong>return</strong>&nbsp;statement. This is required if you want to return a value from a function. This statement should be the last statement in a function.</p>
+<p>For example, you can pass two numbers in a function and then you can expect the function to return their multiplication in your calling program.</p>
+<h3>Example</h3>
+<p>Try the following example. It defines a function that takes two parameters and concatenates them before returning the resultant in the calling program.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span>
+   <span class="tag">&lt;head&gt;</span>
+
+      <span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+         <span class="kwd">function</span><span class="pln"> concatenate</span><span class="pun">(</span><span class="pln">first</span><span class="pun">,</span><span class="pln"> last</span><span class="pun">)</span>
+         <span class="pun">{</span>
+            <span class="kwd">var</span><span class="pln"> full</span><span class="pun">;</span><span class="pln">
+            full </span><span class="pun">=</span><span class="pln"> first </span><span class="pun">+</span><span class="pln"> last</span><span class="pun">;</span>
+            <span class="kwd">return</span><span class="pln"> full</span><span class="pun">;</span>
+         <span class="pun">}</span>
+
+         <span class="kwd">function</span><span class="pln"> secondFunction</span><span class="pun">()</span>
+         <span class="pun">{</span>
+            <span class="kwd">var</span><span class="pln"> result</span><span class="pun">;</span><span class="pln">
+            result </span><span class="pun">=</span><span class="pln"> concatenate</span><span class="pun">(</span><span class="str">'Zara'</span><span class="pun">,</span> <span class="str">'Ali'</span><span class="pun">);</span><span class="pln">
+            document</span><span class="pun">.</span><span class="pln">write </span><span class="pun">(</span><span class="pln">result </span><span class="pun">);</span>
+         <span class="pun">}</span>
+      <span class="tag">&lt;/script&gt;</span>
+
+   <span class="tag">&lt;/head&gt;</span>
+
+   <span class="tag">&lt;body&gt;</span>
+      <span class="tag">&lt;p&gt;</span><span class="pln">Click the following button to call the function</span><span class="tag">&lt;/p&gt;</span>
+
+      <span class="tag">&lt;form&gt;</span>
+         <span class="tag">&lt;input</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span> <span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">secondFunction</span><span class="pun">()</span><span class="atv">"</span> <span class="atn">value</span><span class="pun">=</span><span class="atv">"Call Function"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;/form&gt;</span>
+
+      <span class="tag">&lt;p&gt;</span><span class="pln">Use different parameters inside the function and then try...</span><span class="tag">&lt;/p&gt;</span>
+
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+<p>There is a lot to learn about JavaScript functions, however we have covered the most important concepts in this tutorial.</p>
+<ul class="list">
+    <li>
+        <p><a title="JavaScript Nested Functions">JavaScript Nested Functions</a></p>
+    </li>
+    <li>
+        <p><a title="JavaScript Function Constructors">JavaScript Function( ) Constructor</a></p>
+    </li>
+    <li>
+        <p><a title="JavaScript Function Literals">JavaScript Function Literals</a></p>
+    </li>
+</ul>
+</body>
+</html>

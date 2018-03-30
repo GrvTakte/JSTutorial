@@ -1,0 +1,340 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<p>A regular expression is an object that describes a pattern of characters.</p>
+<p>The JavaScript&nbsp;<strong>RegExp</strong>&nbsp;class represents regular expressions, and both String and&nbsp;<strong>RegExp</strong>&nbsp;define methods that use regular expressions to perform powerful pattern-matching and search-and-replace functions on text.</p>
+<h3>Syntax</h3>
+<p>A regular expression could be defined with the&nbsp;<strong>RegExp ()</strong>&nbsp;constructor, as follows &minus;</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">var</span><span class="pln"> pattern </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">RegExp</span><span class="pun">(</span><span class="pln">pattern</span><span class="pun">,</span><span class="pln"> attributes</span><span class="pun">);</span>
+
+<span class="kwd">or</span><span class="pln"> simply
+
+</span><span class="kwd">var</span><span class="pln"> pattern </span><span class="pun">=</span> <span class="str">/pattern/</span><span class="pln">attributes</span><span class="pun">;</span></pre>
+<p>Here is the description of the parameters &minus;</p>
+<ul class="list">
+    <li>
+        <p><strong>pattern</strong>&nbsp;&minus; A string that specifies the pattern of the regular expression or another regular expression.</p>
+    </li>
+    <li>
+        <p><strong>attributes</strong>&nbsp;&minus; An optional string containing any of the "g", "i", and "m" attributes that specify global, case-insensitive, and multiline matches, respectively.</p>
+    </li>
+</ul>
+<h2>Brackets</h2>
+<p>Brackets ([]) have a special meaning when used in the context of regular expressions. They are used to find a range of characters.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="10%">Expression</th>
+        <th width="90%">Description</th>
+    </tr>
+    <tr>
+        <td>[...]</td>
+        <td>Any one character between the brackets.</td>
+    </tr>
+    <tr>
+        <td>[^...]</td>
+        <td>Any one character not between the brackets.</td>
+    </tr>
+    <tr>
+        <td>[0-9]</td>
+        <td>It matches any decimal digit from 0 through 9.</td>
+    </tr>
+    <tr>
+        <td>[a-z]</td>
+        <td>It matches any character from lowercase a through lowercase z.</td>
+    </tr>
+    <tr>
+        <td>[A-Z]</td>
+        <td>It matches any character from uppercase A through uppercase Z.</td>
+    </tr>
+    <tr>
+        <td>[a-Z]</td>
+        <td>It matches any character from lowercase a through uppercase Z.</td>
+    </tr>
+    </tbody>
+</table>
+<p>The ranges shown above are general; you could also use the range [0-3] to match any decimal digit ranging from 0 through 3, or the range [b-v] to match any lowercase character ranging from&nbsp;<strong>b</strong>&nbsp;through&nbsp;<strong>v</strong>.</p>
+<h2>Quantifiers</h2>
+<p>The frequency or position of bracketed character sequences and single characters can be denoted by a special character. Each special character has a specific connotation. The +, *, ?, and $ flags all follow a character sequence.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="10%">Expression</th>
+        <th width="90%">Description</th>
+    </tr>
+    <tr>
+        <td>p+</td>
+        <td>It matches any string containing one or more p's.</td>
+    </tr>
+    <tr>
+        <td>p*</td>
+        <td>It matches any string containing zero or more p's.</td>
+    </tr>
+    <tr>
+        <td>p?</td>
+        <td>It matches any string containing at most one p.</td>
+    </tr>
+    <tr>
+        <td>p{<strong>N</strong>}</td>
+        <td>It matches any string containing a sequence of&nbsp;<strong>N</strong>&nbsp;p's</td>
+    </tr>
+    <tr>
+        <td>p{2,3}</td>
+        <td>It matches any string containing a sequence of two or three p's.</td>
+    </tr>
+    <tr>
+        <td>p{2, }</td>
+        <td>It matches any string containing a sequence of at least two p's.</td>
+    </tr>
+    <tr>
+        <td>p$</td>
+        <td>It matches any string with p at the end of it.</td>
+    </tr>
+    <tr>
+        <td><strong>^</strong>p</td>
+        <td>It matches any string with p at the beginning of it.</td>
+    </tr>
+    </tbody>
+</table>
+<h3>Examples</h3>
+<p>Following examples explain more about matching characters.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="10%">Expression</th>
+        <th width="90%">Description</th>
+    </tr>
+    <tr>
+        <td>[^a-zA-Z]</td>
+        <td>It matches any string not containing any of the characters ranging from&nbsp;<strong>a</strong>&nbsp;through&nbsp;<strong>z</strong>&nbsp;and&nbsp;<strong>A</strong>&nbsp;through Z.</td>
+    </tr>
+    <tr>
+        <td>p.p</td>
+        <td>It matches any string containing&nbsp;<strong>p,</strong>&nbsp;followed by any character, in turn followed by another&nbsp;<strong>p</strong>.</td>
+    </tr>
+    <tr>
+        <td>^.{2}$</td>
+        <td>It matches any string containing exactly two characters.</td>
+    </tr>
+    <tr>
+        <td>&lt;b&gt;(.*)&lt;/b&gt;</td>
+        <td>It matches any string enclosed within &lt;b&gt; and &lt;/b&gt;.</td>
+    </tr>
+    <tr>
+        <td>p(hp)*</td>
+        <td>It matches any string containing a&nbsp;<strong>p</strong>&nbsp;followed by zero or more instances of the sequence&nbsp;<strong>hp</strong>.</td>
+    </tr>
+    </tbody>
+</table>
+<h2>Literal characters</h2>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="10%">Character</th>
+        <th width="90%">Description</th>
+    </tr>
+    <tr>
+        <td>Alphanumeric</td>
+        <td>Itself</td>
+    </tr>
+    <tr>
+        <td>\0</td>
+        <td>The NUL character (\u0000)</td>
+    </tr>
+    <tr>
+        <td>\t</td>
+        <td>Tab (\u0009)</td>
+    </tr>
+    <tr>
+        <td>\n</td>
+        <td>Newline (\u000A)</td>
+    </tr>
+    <tr>
+        <td>\v</td>
+        <td>Vertical tab (\u000B)</td>
+    </tr>
+    <tr>
+        <td>\f</td>
+        <td>Form feed (\u000C)</td>
+    </tr>
+    <tr>
+        <td>\r</td>
+        <td>Carriage return (\u000D)</td>
+    </tr>
+    <tr>
+        <td>\xnn</td>
+        <td>The Latin character specified by the hexadecimal number nn; for example, \x0A is the same as \n</td>
+    </tr>
+    <tr>
+        <td>\uxxxx</td>
+        <td>The Unicode character specified by the hexadecimal number xxxx; for example, \u0009 is the same as \t</td>
+    </tr>
+    <tr>
+        <td>\cX</td>
+        <td>The control character ^X; for example, \cJ is equivalent to the newline character \n</td>
+    </tr>
+    </tbody>
+</table>
+<h2>Metacharacters</h2>
+<p>A metacharacter is simply an alphabetical character preceded by a backslash that acts to give the combination a special meaning.</p>
+<p>For instance, you can search for a large sum of money using the '\d' metacharacter:&nbsp;<strong>/([\d]+)000/</strong>, Here&nbsp;<strong>\d</strong>&nbsp;will search for any string of numerical character.</p>
+<p>The following table lists a set of metacharacters which can be used in PERL Style Regular Expressions.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th>Character</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>.</td>
+        <td>a single character</td>
+    </tr>
+    <tr>
+        <td>\s</td>
+        <td>a whitespace character (space, tab, newline)</td>
+    </tr>
+    <tr>
+        <td>\S</td>
+        <td>non-whitespace character</td>
+    </tr>
+    <tr>
+        <td>\d</td>
+        <td>a digit (0-9)</td>
+    </tr>
+    <tr>
+        <td>\D</td>
+        <td>a non-digit</td>
+    </tr>
+    <tr>
+        <td>\w</td>
+        <td>a word character (a-z, A-Z, 0-9, _)</td>
+    </tr>
+    <tr>
+        <td>\W</td>
+        <td>a non-word character</td>
+    </tr>
+    <tr>
+        <td>[\b]</td>
+        <td>a literal backspace (special case).</td>
+    </tr>
+    <tr>
+        <td>[aeiou]</td>
+        <td>matches a single character in the given set</td>
+    </tr>
+    <tr>
+        <td>[^aeiou]</td>
+        <td>matches a single character outside the given set</td>
+    </tr>
+    <tr>
+        <td>(foo|bar|baz)</td>
+        <td>matches any of the alternatives specified</td>
+    </tr>
+    </tbody>
+</table>
+<h2>Modifiers</h2>
+<p>Several modifiers are available that can simplify the way you work with&nbsp;<strong>regexps,</strong>&nbsp;like case sensitivity, searching in multiple lines, etc.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="10%">Modifier</th>
+        <th width="90%">Description</th>
+    </tr>
+    <tr>
+        <td>i</td>
+        <td>Perform case-insensitive matching.</td>
+    </tr>
+    <tr>
+        <td>m</td>
+        <td>Specifies that if the string has newline or carriage return characters, the ^ and $ operators will now match against a newline boundary, instead of a string boundary</td>
+    </tr>
+    <tr>
+        <td>g</td>
+        <td>Performs a global matchthat is, find all matches rather than stopping after the first match.</td>
+    </tr>
+    </tbody>
+</table>
+<h2>RegExp Properties</h2>
+<p>Here is a list of the properties associated with RegExp and their description.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="20%">Property</th>
+        <th width="80%">Description</th>
+    </tr>
+    <tr>
+        <td><a>constructor</a></td>
+        <td>Specifies the function that creates an object's prototype.</td>
+    </tr>
+    <tr>
+        <td><a>global</a></td>
+        <td>Specifies if the "g" modifier is set.</td>
+    </tr>
+    <tr>
+        <td><a>ignoreCase</a></td>
+        <td>Specifies if the "i" modifier is set.</td>
+    </tr>
+    <tr>
+        <td><a>lastIndex</a></td>
+        <td>The index at which to start the next match.</td>
+    </tr>
+    <tr>
+        <td><a>multiline</a></td>
+        <td>Specifies if the "m" modifier is set.</td>
+    </tr>
+    <tr>
+        <td><a>source</a></td>
+        <td>The text of the pattern.</td>
+    </tr>
+    </tbody>
+</table>
+<p>In the following sections, we will have a few examples to demonstrate the usage of RegExp properties.</p>
+<h2>RegExp Methods</h2>
+<p>Here is a list of the methods associated with RegExp along with their description.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="20%">Method</th>
+        <th width="80%">Description</th>
+    </tr>
+    <tr>
+        <td><a>exec()</a></td>
+        <td>Executes a search for a match in its string parameter.</td>
+    </tr>
+    <tr>
+        <td><a>test()</a></td>
+        <td>Tests for a match in its string parameter.</td>
+    </tr>
+    <tr>
+        <td><a>toSource()</a></td>
+        <td>Returns an object literal representing the specified object; you can use this value to create a new object.</td>
+    </tr>
+    <tr>
+        <td><a>toString()</a></td>
+        <td>Returns a string representing the specified object.</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

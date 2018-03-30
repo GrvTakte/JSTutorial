@@ -1,0 +1,99 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<p>Every now and then, developers commit mistakes while coding. A mistake in a program or a script is referred to as a&nbsp;<strong>bug</strong>.</p>
+<p>The process of finding and fixing bugs is called&nbsp;<strong>debugging</strong>&nbsp;and is a normal part of the development process. This section covers tools and techniques that can help you with debugging tasks..</p>
+<h2>Error Messages in IE</h2>
+<p>The most basic way to track down errors is by turning on error information in your browser. By default, Internet Explorer shows an error icon in the status bar when an error occurs on the page.</p>
+<p><img src="error_icon.gif" width="300px" alt="Error Icon" /></p>
+<p>Double-clicking this icon takes you to a dialog box showing information about the specific error that occurred.</p>
+<p>Since this icon is easy to overlook, Internet Explorer gives you the option to automatically show the Error dialog box whenever an error occurs.</p>
+<p>To enable this option, select&nbsp;<strong>Tools &rarr; Internet Options &rarr; Advanced tab.</strong>and then finally check the&nbsp;<strong>"Display a Notification About Every Script Error"</strong>&nbsp;box option as shown below &minus;</p>
+<p><img src="internet_options.gif" alt="Internet Options" /></p>
+<h2>Error Messages in Firefox or Mozilla</h2>
+<p>Other browsers like Firefox, Netscape, and Mozilla send error messages to a special window called the&nbsp;<strong>JavaScript Console</strong>&nbsp;or&nbsp;<strong>Error Consol</strong>. To view the console, select&nbsp;<strong>Tools &rarr; Error Consol or Web Development</strong>.</p>
+<p>Unfortunately, since these browsers give no visual indication when an error occurs, you must keep the Console open and watch for errors as your script executes.</p>
+<p><img src="error_console.gif" width="300px" alt="Error Console" /></p>
+<h2>Error Notifications</h2>
+<p>Error notifications that show up on Console or through Internet Explorer dialog boxes are the result of both syntax and runtime errors. These error notification include the line number at which the error occurred.</p>
+<p>If you are using Firefox, then you can click on the error available in the error console to go to the exact line in the script having error.</p>
+<h2>How to debug a Script</h2>
+<p>There are various ways to debug your JavaScript &minus;</p>
+<h3>Use a JavaScript Validator</h3>
+<p>One way to check your JavaScript code for strange bugs is to run it through a program that checks it to make sure it is valid and that it follows the official syntax rules of the language. These programs are called&nbsp;<strong>validating parsers</strong>or just&nbsp;<strong>validators</strong>&nbsp;for short, and often come with commercial HTML and JavaScript editors.</p>
+<p>The most convenient validator for JavaScript is Douglas Crockford's JavaScript Lint, which is available for free at&nbsp;<a href="http://www.jslint.com/" target="_blank" rel="nofollow">Douglas Crockford's JavaScript Lint</a>.</p>
+<p>Simply visit that web page, paste your JavaScript (Only JavaScript) code into the text area provided, and click the jslint button. This program will parse through your JavaScript code, ensuring that all the variable and function definitions follow the correct syntax. It will also check JavaScript statements, such as if and&nbsp;<strong>while,</strong>&nbsp;to ensure they too follow the correct format</p>
+<h3>Add Debugging Code to Your Programs</h3>
+<p>You can use the&nbsp;<strong>alert()</strong>&nbsp;or&nbsp;<strong>document.write()</strong>&nbsp;methods in your program to debug your code. For example, you might write something as follows &minus;</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">var</span><span class="pln"> debugging </span><span class="pun">=</span> <span class="kwd">true</span><span class="pun">;</span>
+<span class="kwd">var</span><span class="pln"> whichImage </span><span class="pun">=</span> <span class="str">"widget"</span><span class="pun">;</span>
+
+<span class="kwd">if</span><span class="pun">(</span><span class="pln"> debugging </span><span class="pun">)</span><span class="pln">
+alert</span><span class="pun">(</span> <span class="str">"Calls swapImage() with argument: "</span> <span class="pun">+</span><span class="pln"> whichImage </span><span class="pun">);</span>
+<span class="kwd">var</span><span class="pln"> swapStatus </span><span class="pun">=</span><span class="pln"> swapImage</span><span class="pun">(</span><span class="pln"> whichImage </span><span class="pun">);</span>
+
+<span class="kwd">if</span><span class="pun">(</span><span class="pln"> debugging </span><span class="pun">)</span><span class="pln">
+   alert</span><span class="pun">(</span> <span class="str">"Exits swapImage() with swapStatus="</span> <span class="pun">+</span><span class="pln"> swapStatus </span><span class="pun">);</span></pre>
+<p>By examining the content and order of the&nbsp;<strong>alert()</strong>&nbsp;as they appear, you can examine the health of your program very easily.</p>
+<h3>Use a JavaScript Debugger</h3>
+<p>A debugger is an application that places all aspects of script execution under the control of the programmer. Debuggers provide fine-grained control over the state of the script through an interface that allows you to examine and set values as well as control the flow of execution.</p>
+<p>Once a script has been loaded into a debugger, it can be run one line at a time or instructed to halt at certain breakpoints. Once execution is halted, the programmer can examine the state of the script and its variables in order to determine if something is amiss. You can also watch variables for changes in their values.</p>
+<p>The latest version of the Mozilla JavaScript Debugger (code-named Venkman) for both Mozilla and Netscape browsers can be downloaded at&nbsp;<a href="http://www.hacksrus.com/~ginda/venkman" target="_blank">http://www.hacksrus.com/~ginda/venkman</a></p>
+<h2>Useful tips for developers</h2>
+<p>You can keep the following tips in mind to reduce the number of errors in your scripts and simplify the debugging process &minus;</p>
+<ul class="list">
+    <li>
+        <p>Use plenty of&nbsp;<strong>comments</strong>. Comments enable you to explain why you wrote the script the way you did and to explain particularly difficult sections of code.</p>
+    </li>
+    <li>
+        <p>Always use&nbsp;<strong>indentation</strong>&nbsp;to make your code easy to read. Indenting statements also makes it easier for you to match up beginning and ending tags, curly braces, and other HTML and script elements.</p>
+    </li>
+    <li>
+        <p>Write&nbsp;<strong>modular code</strong>. Whenever possible, group your statements into functions. Functions let you group related statements, and test and reuse portions of code with minimal effort.</p>
+    </li>
+    <li>
+        <p>Be consistent in the way you name your variables and functions. Try using names that are long enough to be meaningful and that describe the contents of the variable or the purpose of the function.</p>
+    </li>
+    <li>
+        <p>Use consistent syntax when naming variables and functions. In other words, keep them all lowercase or all uppercase; if you prefer Camel-Back notation, use it consistently.</p>
+    </li>
+    <li>
+        <p><strong>Test long scripts</strong>&nbsp;in a modular fashion. In other words, do not try to write the entire script before testing any portion of it. Write a piece and get it to work before adding the next portion of code.</p>
+    </li>
+    <li>
+        <p>Use&nbsp;<strong>descriptive variable and function names</strong>&nbsp;and avoid using single-character names.</p>
+    </li>
+    <li>
+        <p><strong>Watch your quotation marks</strong>. Remember that quotation marks are used in pairs around strings and that both quotation marks must be of the same style (either single or double).</p>
+    </li>
+    <li>
+        <p><strong>Watch your equal signs</strong>. You should not used a single = for comparison purpose.</p>
+    </li>
+    <li>
+        <p>Declare&nbsp;<strong>variables explicitly</strong>&nbsp;using the&nbsp;<strong>var</strong>&nbsp;keyword.</p>
+    </li>
+</ul>
+</body>
+</html>

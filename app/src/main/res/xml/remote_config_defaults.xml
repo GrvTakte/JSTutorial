@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+    <entry>
+        <key>
+            signup_prompt
+        </key>
+        <value>
+            Hello World, Signup Please
+        </value>
+    </entry>
+
+    <entry>
+        <key>
+            color_primary
+        </key>
+        <value>
+            #3F51B5
+        </value>
+    </entry>
+
+    <entry>
+        <key>
+            min_password-length
+        </key>
+        <value>
+            8
+        </value>
+    </entry>
+
+</defaultsMap>

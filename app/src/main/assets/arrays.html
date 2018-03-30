@@ -1,0 +1,212 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<p>The&nbsp;<strong>Array</strong>&nbsp;object lets you store multiple values in a single variable. It stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</p>
+<h3>Syntax</h3>
+<p>Use the following syntax to create an&nbsp;<strong>Array</strong>&nbsp;object &minus;</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">var</span><span class="pln"> fruits </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">Array</span><span class="pun">(</span> <span class="str">"apple"</span><span class="pun">,</span> <span class="str">"orange"</span><span class="pun">,</span> <span class="str">"mango"</span> <span class="pun">);</span></pre>
+<p>The&nbsp;<strong>Array</strong>&nbsp;parameter is a list of strings or integers. When you specify a single numeric parameter with the Array constructor, you specify the initial length of the array. The maximum length allowed for an array is 4,294,967,295.</p>
+<p>You can create array by simply assigning values as follows &minus;</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">var</span><span class="pln"> fruits </span><span class="pun">=</span> <span class="pun">[</span> <span class="str">"apple"</span><span class="pun">,</span> <span class="str">"orange"</span><span class="pun">,</span> <span class="str">"mango"</span> <span class="pun">];</span></pre>
+<p>You will use ordinal numbers to access and to set values inside an array as follows.</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="pln">fruits</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span> <span class="kwd">is</span><span class="pln"> the first element
+fruits</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span> <span class="kwd">is</span><span class="pln"> the second element
+fruits</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span> <span class="kwd">is</span><span class="pln"> the third element</span></pre>
+<h2>Array Properties</h2>
+<p>Here is a list of the properties of the Array object along with their description.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="20%">Property</th>
+        <th width="80%">Description</th>
+    </tr>
+    <tr>
+        <td>
+            <p><a>constructor</a></p>
+        </td>
+        <td>Returns a reference to the array function that created the object.</td>
+    </tr>
+    <tr>
+        <td>index</td>
+        <td>The property represents the zero-based index of the match in the string</td>
+    </tr>
+    <tr>
+        <td>input</td>
+        <td>This property is only present in arrays created by regular expression matches.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>length</a></p>
+        </td>
+        <td>Reflects the number of elements in an array.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>prototype</a></p>
+        </td>
+        <td>The prototype property allows you to add properties and methods to an object.</td>
+    </tr>
+    </tbody>
+</table>
+<p>In the following sections, we will have a few examples to illustrate the usage of Array properties.</p>
+<h2>Array Methods</h2>
+<p>Here is a list of the methods of the Array object along with their description.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th width="20%">Method</th>
+        <th width="80%">Description</th>
+    </tr>
+    <tr>
+        <td>
+            <p><a>concat()</a></p>
+        </td>
+        <td>Returns a new array comprised of this array joined with other array(s) and/or value(s).</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>every()</a></p>
+        </td>
+        <td>Returns true if every element in this array satisfies the provided testing function.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>filter()</a></p>
+        </td>
+        <td>Creates a new array with all of the elements of this array for which the provided filtering function returns true.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>forEach()</a></p>
+        </td>
+        <td>Calls a function for each element in the array.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>indexOf()</a></p>
+        </td>
+        <td>Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>join()</a></p>
+        </td>
+        <td>Joins all elements of an array into a string.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>lastIndexOf()</a></p>
+        </td>
+        <td>Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>map()</a></p>
+        </td>
+        <td>Creates a new array with the results of calling a provided function on every element in this array.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>pop()</a></p>
+        </td>
+        <td>Removes the last element from an array and returns that element.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>push()</a></p>
+        </td>
+        <td>Adds one or more elements to the end of an array and returns the new length of the array.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>reduce()</a></p>
+        </td>
+        <td>Apply a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>reduceRight()</a></p>
+        </td>
+        <td>Apply a function simultaneously against two values of the array (from right-to-left) as to reduce it to a single value.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>reverse()</a></p>
+        </td>
+        <td>Reverses the order of the elements of an array -- the first becomes the last, and the last becomes the first.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>shift()</a></p>
+        </td>
+        <td>Removes the first element from an array and returns that element.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>slice()</a></p>
+        </td>
+        <td>Extracts a section of an array and returns a new array.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>some()</a></p>
+        </td>
+        <td>Returns true if at least one element in this array satisfies the provided testing function.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>toSource()</a></p>
+        </td>
+        <td>Represents the source code of an object</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>sort()</a></p>
+        </td>
+        <td>Sorts the elements of an array</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>splice()</a></p>
+        </td>
+        <td>Adds and/or removes elements from an array.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>toString()</a></p>
+        </td>
+        <td>Returns a string representing the array and its elements.</td>
+    </tr>
+    <tr>
+        <td>
+            <p><a>unshift()</a></p>
+        </td>
+        <td>Adds one or more elements to the front of an array and returns the new length of the array.</td>
+    </tr>
+    </tbody>
+</table>
+<p>In the following sections, we will have a few examples to demonstrate the usage of Array methods.</p>
+</body>
+</html>

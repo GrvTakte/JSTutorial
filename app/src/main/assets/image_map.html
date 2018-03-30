@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<p>You can use JavaScript to create client-side image map. Client-side image maps are enabled by the&nbsp;<strong>usemap</strong>&nbsp;attribute for the &lt;img /&gt; tag and defined by special &lt;map&gt; and &lt;area&gt; extension tags.</p>
+<p>The image that is going to form the map is inserted into the page using the &lt;img /&gt; element as normal, except that it carries an extra attribute called&nbsp;<strong>usemap</strong>. The value of the usemap attribute is the value of the name attribute on the &lt;map&gt; element, which you are about to meet, preceded by a pound or hash sign.</p>
+<p>The &lt;map&gt; element actually creates the map for the image and usually follows directly after the &lt;img /&gt; element. It acts as a container for the &lt;area /&gt; elements that actually define the clickable hotspots. The &lt;map&gt; element carries only one attribute, the&nbsp;<strong>name</strong>&nbsp;attribute, which is the name that identifies the map. This is how the &lt;img /&gt; element knows which &lt;map&gt; element to use.</p>
+<p>The &lt;area&gt; element specifies the shape and the coordinates that define the boundaries of each clickable hotspot.</p>
+<p>The following code combines imagemaps and JavaScript to produce a message in a text box when the mouse is moved over different parts of an image.</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="tag">&lt;html&gt;</span>
+
+   <span class="tag">&lt;head&gt;</span>
+      <span class="tag">&lt;title&gt;</span><span class="pln">Using JavaScript Image Map</span><span class="tag">&lt;/title&gt;</span>
+
+      <span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+         <span class="pun">&lt;!--</span>
+            <span class="kwd">function</span><span class="pln"> showTutorial</span><span class="pun">(</span><span class="pln">name</span><span class="pun">){</span><span class="pln">
+               document</span><span class="pun">.</span><span class="pln">myform</span><span class="pun">.</span><span class="pln">stage</span><span class="pun">.</span><span class="pln">value </span><span class="pun">=</span><span class="pln"> name
+            </span><span class="pun">}</span>
+         <span class="com">//--&gt;</span>
+      <span class="tag">&lt;/script&gt;</span>
+
+   <span class="tag">&lt;/head&gt;</span>
+
+   <span class="tag">&lt;body&gt;</span>
+      <span class="tag">&lt;form</span> <span class="atn">name</span><span class="pun">=</span><span class="atv">"myform"</span><span class="tag">&gt;</span>
+         <span class="tag">&lt;input</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span> <span class="atn">name</span><span class="pun">=</span><span class="atv">"stage"</span> <span class="atn">size</span><span class="pun">=</span><span class="atv">"20"</span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;/form&gt;</span>
+
+      <span class="com">&lt;!-- Create  Mappings --&gt;</span>
+      <span class="tag">&lt;img</span> <span class="atn">src</span><span class="pun">=</span><span class="atv">"/images/usemap.gif"</span> <span class="atn">alt</span><span class="pun">=</span><span class="atv">"HTML Map"</span> <span class="atn">border</span><span class="pun">=</span><span class="atv">"0"</span> <span class="atn">usemap</span><span class="pun">=</span><span class="atv">"#tutorials"</span><span class="tag">/&gt;</span>
+
+      <span class="tag">&lt;map</span> <span class="atn">name</span><span class="pun">=</span><span class="atv">"tutorials"</span><span class="tag">&gt;</span>
+         <span class="tag">&lt;area</span> <span class="atn">shape</span><span class="pun">=</span><span class="atv">"poly"</span>
+            <span class="atn">coords</span><span class="pun">=</span><span class="atv">"74,0,113,29,98,72,52,72,38,27"</span>
+            <span class="atn">href</span><span class="pun">=</span><span class="atv">"/perl/index.htm"</span> <span class="atn">alt</span><span class="pun">=</span><span class="atv">"Perl Tutorial"</span>
+            <span class="atn">target</span><span class="pun">=</span><span class="atv">"_self"</span>
+            <span class="atn">onMouseOver</span><span class="pun">=</span><span class="atv">"</span><span class="pln">showTutorial</span><span class="pun">(</span><span class="str">'perl'</span><span class="pun">)</span><span class="atv">"</span>
+            <span class="atn">onMouseOut</span><span class="pun">=</span><span class="atv">"</span><span class="pln">showTutorial</span><span class="pun">(</span><span class="str">''</span><span class="pun">)</span><span class="atv">"</span><span class="tag">/&gt;</span>
+
+         <span class="tag">&lt;area</span> <span class="atn">shape</span><span class="pun">=</span><span class="atv">"rect"</span>
+            <span class="atn">coords</span><span class="pun">=</span><span class="atv">"22,83,126,125"</span>
+            <span class="atn">href</span><span class="pun">=</span><span class="atv">"/html/index.htm"</span> <span class="atn">alt</span><span class="pun">=</span><span class="atv">"HTML Tutorial"</span>
+            <span class="atn">target</span><span class="pun">=</span><span class="atv">"_self"</span>
+            <span class="atn">onMouseOver</span><span class="pun">=</span><span class="atv">"</span><span class="pln">showTutorial</span><span class="pun">(</span><span class="str">'html'</span><span class="pun">)</span><span class="atv">"</span>
+            <span class="atn">onMouseOut</span><span class="pun">=</span><span class="atv">"</span><span class="pln">showTutorial</span><span class="pun">(</span><span class="str">''</span><span class="pun">)</span><span class="atv">"</span><span class="tag">/&gt;</span>
+
+         <span class="tag">&lt;area</span> <span class="atn">shape</span><span class="pun">=</span><span class="atv">"circle"</span>
+            <span class="atn">coords</span><span class="pun">=</span><span class="atv">"73,168,32"</span>
+            <span class="atn">href</span><span class="pun">=</span><span class="atv">"/php/index.htm"</span> <span class="atn">alt</span><span class="pun">=</span><span class="atv">"PHP Tutorial"</span>
+            <span class="atn">target</span><span class="pun">=</span><span class="atv">"_self"</span>
+            <span class="atn">onMouseOver</span><span class="pun">=</span><span class="atv">"</span><span class="pln">showTutorial</span><span class="pun">(</span><span class="str">'php'</span><span class="pun">)</span><span class="atv">"</span>
+            <span class="atn">onMouseOut</span><span class="pun">=</span><span class="atv">"</span><span class="pln">showTutorial</span><span class="pun">(</span><span class="str">''</span><span class="pun">)</span><span class="atv">"</span><span class="tag">/&gt;</span>
+      <span class="tag">&lt;/map&gt;</span>
+   <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+</body>
+</html>

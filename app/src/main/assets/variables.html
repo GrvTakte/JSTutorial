@@ -1,0 +1,187 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+        td{
+        font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<h2>JavaScript Datatypes</h2>
+<p>One of the most fundamental characteristics of a programming language is the set of data types it supports. These are the type of values that can be represented and manipulated in a programming language.</p>
+<p>JavaScript allows you to work with three primitive data types &minus;</p>
+<ul class="list">
+    <li>
+        <p><strong>Numbers,</strong>&nbsp;eg. 123, 120.50 etc.</p>
+    </li>
+    <li>
+        <p><strong>Strings</strong>&nbsp;of text e.g. "This text string" etc.</p>
+    </li>
+    <li>
+        <p><strong>Boolean</strong>&nbsp;e.g. true or false.</p>
+    </li>
+</ul>
+<p>JavaScript also defines two trivial data types,&nbsp;<strong>null</strong>&nbsp;and&nbsp;<strong>undefined,</strong>&nbsp;each of which defines only a single value. In addition to these primitive data types, JavaScript supports a composite data type known as&nbsp;<strong>object</strong>. We will cover objects in detail in a separate chapter.</p>
+<p><strong>Note</strong>&nbsp;&minus; JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard.</p>
+<h2>JavaScript Variables</h2>
+<p>Like many other programming languages, JavaScript has variables. Variables can be thought of as named containers. You can place data into these containers and then refer to the data simply by naming the container.</p>
+<p>Before you use a variable in a JavaScript program, you must declare it. Variables are declared with the&nbsp;<strong>var</strong>&nbsp;keyword as follows.</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+   <span class="pun">&lt;!--</span>
+      <span class="kwd">var</span><span class="pln"> money</span><span class="pun">;</span>
+      <span class="kwd">var</span><span class="pln"> name</span><span class="pun">;</span>
+   <span class="com">//--&gt;</span>
+<span class="tag">&lt;/script&gt;</span></pre>
+<p>You can also declare multiple variables with the same&nbsp;<strong>var</strong>&nbsp;keyword as follows &minus;</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+   <span class="pun">&lt;!--</span>
+      <span class="kwd">var</span><span class="pln"> money</span><span class="pun">,</span><span class="pln"> name</span><span class="pun">;</span>
+   <span class="com">//--&gt;</span>
+<span class="tag">&lt;/script&gt;</span></pre>
+<p>Storing a value in a variable is called&nbsp;<strong>variable initialization</strong>. You can do variable initialization at the time of variable creation or at a later point in time when you need that variable.</p>
+<p>For instance, you might create a variable named&nbsp;<strong>money</strong>&nbsp;and assign the value 2000.50 to it later. For another variable, you can assign a value at the time of initialization as follows.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+   <span class="pun">&lt;!--</span>
+      <span class="kwd">var</span><span class="pln"> name </span><span class="pun">=</span> <span class="str">"Ali"</span><span class="pun">;</span>
+      <span class="kwd">var</span><span class="pln"> money</span><span class="pun">;</span><span class="pln">
+      money </span><span class="pun">=</span> <span class="lit">2000.50</span><span class="pun">;</span>
+   <span class="com">//--&gt;</span>
+<span class="tag">&lt;/script&gt;</span></pre>
+<p><strong>Note</strong>&nbsp;&minus; Use the&nbsp;<strong>var</strong>&nbsp;keyword only for declaration or initialization, once for the life of any variable name in a document. You should not re-declare same variable twice.</p>
+<p>JavaScript is&nbsp;<strong>untyped</strong>&nbsp;language. This means that a JavaScript variable can hold a value of any data type. Unlike many other languages, you don't have to tell JavaScript during variable declaration what type of value the variable will hold. The value type of a variable can change during the execution of a program and JavaScript takes care of it automatically.</p>
+<h2>JavaScript Variable Scope</h2>
+<p>The scope of a variable is the region of your program in which it is defined. JavaScript variables have only two scopes.</p>
+<ul class="list">
+    <li>
+        <p><strong>Global Variables</strong>&nbsp;&minus; A global variable has global scope which means it can be defined anywhere in your JavaScript code.</p>
+    </li>
+    <li>
+        <p><strong>Local Variables</strong>&nbsp;&minus; A local variable will be visible only within a function where it is defined. Function parameters are always local to that function.</p>
+    </li>
+</ul>
+<p>Within the body of a function, a local variable takes precedence over a global variable with the same name. If you declare a local variable or function parameter with the same name as a global variable, you effectively hide the global variable. Take a look into the following example.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span>
+   <span class="tag">&lt;body</span> <span class="atn">onload</span> <span class="pun">=</span><span class="pln"> checkscope</span><span class="pun">();</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;script</span> <span class="atn">type</span> <span class="pun">=</span> <span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+         <span class="pun">&lt;!--</span>
+            <span class="kwd">var</span><span class="pln"> myVar </span><span class="pun">=</span> <span class="str">"global"</span><span class="pun">;</span> <span class="com">// Declare a global variable</span>
+            <span class="kwd">function</span><span class="pln"> checkscope</span><span class="pun">(</span> <span class="pun">)</span> <span class="pun">{</span>
+               <span class="kwd">var</span><span class="pln"> myVar </span><span class="pun">=</span> <span class="str">"local"</span><span class="pun">;</span>  <span class="com">// Declare a local variable</span><span class="pln">
+               document</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">myVar</span><span class="pun">);</span>
+            <span class="pun">}</span>
+         <span class="com">//--&gt;</span>
+      <span class="tag">&lt;/script&gt;</span>
+   <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+<p>This produces the following result &minus;</p>
+<pre class="result notranslate">local
+</pre>
+<h2>JavaScript Variable Names</h2>
+<p>While naming your variables in JavaScript, keep the following rules in mind.</p>
+<ul class="list">
+    <li>
+        <p>You should not use any of the JavaScript reserved keywords as a variable name. These keywords are mentioned in the next section. For example,&nbsp;<strong>break</strong>&nbsp;or&nbsp;<strong>boolean</strong>&nbsp;variable names are not valid.</p>
+    </li>
+    <li>
+        <p>JavaScript variable names should not start with a numeral (0-9). They must begin with a letter or an underscore character. For example,&nbsp;<strong>123test</strong>&nbsp;is an invalid variable name but&nbsp;<strong>_123test</strong>&nbsp;is a valid one.</p>
+    </li>
+    <li>
+        <p>JavaScript variable names are case-sensitive. For example,&nbsp;<strong>Name</strong>&nbsp;and&nbsp;<strong>name</strong>&nbsp;are two different variables.</p>
+    </li>
+</ul>
+<h2>JavaScript Reserved Words</h2>
+<p>A list of all the reserved words in JavaScript are given in the following table. They cannot be used as JavaScript variables, functions, methods, loop labels, or any object names.</p>
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <td>
+            <p>abstract</p>
+            <p>boolean</p>
+            <p>break</p>
+            <p>byte</p>
+            <p>case</p>
+            <p>catch</p>
+            <p>char</p>
+            <p>class</p>
+            <p>const</p>
+            <p>continue</p>
+            <p>debugger</p>
+            <p>default</p>
+            <p>delete</p>
+            <p>do</p>
+            <p>double</p>
+        </td>
+        <td>
+            <p>else</p>
+            <p>enum</p>
+            <p>export</p>
+            <p>extends</p>
+            <p>false</p>
+            <p>final</p>
+            <p>finally</p>
+            <p>float</p>
+            <p>for</p>
+            <p>function</p>
+            <p>goto</p>
+            <p>if</p>
+            <p>implements</p>
+            <p>import</p>
+            <p>in</p>
+        </td>
+        <td>
+            <p>instanceof</p>
+            <p>int</p>
+            <p>interface</p>
+            <p>long</p>
+            <p>native</p>
+            <p>new</p>
+            <p>null</p>
+            <p>package</p>
+            <p>private</p>
+            <p>protected</p>
+            <p>public</p>
+            <p>return</p>
+            <p>short</p>
+            <p>static</p>
+            <p>super</p>
+        </td>
+        <td>
+            <p>switch</p>
+            <p>synchronized</p>
+            <p>this</p>
+            <p>throw</p>
+            <p>throws</p>
+            <p>transient</p>
+            <p>true</p>
+            <p>try</p>
+            <p>typeof</p>
+            <p>var</p>
+            <p>void</p>
+            <p>volatile</p>
+            <p>while</p>
+            <p>with</p>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

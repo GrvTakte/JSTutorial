@@ -1,0 +1,131 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<p>All the modern browsers come with built-in support for JavaScript. Frequently, you may need to enable or disable this support manually. This chapter explains the procedure of enabling and disabling JavaScript support in your browsers: Internet Explorer, Firefox, chrome, and Opera.</p>
+<h2>JavaScript in Internet Explorer</h2>
+<p>Here are simple steps to turn on or turn off JavaScript in your Internet Explorer &minus;</p>
+<ul class="list">
+    <li>
+        <p>Follow&nbsp;<strong>Tools &rarr; Internet Options</strong>&nbsp;from the menu.</p>
+    </li>
+    <li>
+        <p>Select&nbsp;<strong>Security</strong>&nbsp;tab from the dialog box.</p>
+    </li>
+    <li>
+        <p>Click the&nbsp;<strong>Custom Level</strong>&nbsp;button.</p>
+    </li>
+    <li>
+        <p>Scroll down till you find&nbsp;<strong>Scripting option.</strong></p>
+    </li>
+    <li>
+        <p>Select&nbsp;<em>Enable</em>&nbsp;radio button under&nbsp;<strong>Active scripting</strong>.</p>
+    </li>
+    <li>
+        <p>Finally click OK and come out</p>
+    </li>
+</ul>
+<p>To disable JavaScript support in your Internet Explorer, you need to select&nbsp;<strong>Disable</strong>&nbsp;radio button under&nbsp;<strong>Active scripting</strong>.</p>
+<h2>JavaScript in Firefox</h2>
+<p>Here are the steps to turn on or turn off JavaScript in Firefox &minus;</p>
+<ul class="list">
+    <li>
+        <p>Open a new tab &rarr; type&nbsp;<strong>about: config</strong>&nbsp;in the address bar.</p>
+    </li>
+    <li>
+        <p>Then you will find the warning dialog. Select&nbsp;<strong>I&rsquo;ll be careful, I promise!</strong></p>
+    </li>
+    <li>
+        <p>Then you will find the list of&nbsp;<strong>configure options</strong>&nbsp;in the browser.</p>
+    </li>
+    <li>
+        <p>In the search bar, type&nbsp;<strong>javascript.enabled</strong>.</p>
+    </li>
+    <li>
+        <p>There you will find the option to enable or disable javascript by right-clicking on the value of that option &rarr;&nbsp;<strong>select toggle</strong>.</p>
+    </li>
+</ul>
+<p>If javascript.enabled is true; it converts to false upon clicking&nbsp;<strong>toogle</strong>. If javascript is disabled; it gets enabled upon clicking toggle.</p>
+<h2>JavaScript in Chrome</h2>
+<p>Here are the steps to turn on or turn off JavaScript in Chrome &minus;</p>
+<ul class="list">
+    <li>
+        <p>Click the Chrome menu at the top right hand corner of your browser.</p>
+    </li>
+    <li>
+        <p>Select&nbsp;<strong>Settings</strong>.</p>
+    </li>
+    <li>
+        <p>Click&nbsp;<strong>Show advanced settings</strong>&nbsp;at the end of the page.</p>
+    </li>
+    <li>
+        <p>Under the&nbsp;<strong>Privacy</strong>&nbsp;section, click the Content settings button.</p>
+    </li>
+    <li>
+        <p>In the "Javascript" section, select "Do not allow any site to run JavaScript" or "Allow all sites to run JavaScript (recommended)".</p>
+    </li>
+</ul>
+<h2>JavaScript in Opera</h2>
+<p>Here are the steps to turn on or turn off JavaScript in Opera &minus;</p>
+<ul class="list">
+    <li>
+        <p>Follow&nbsp;<strong>Tools &rarr; Preferences</strong>&nbsp;from the menu.</p>
+    </li>
+    <li>
+        <p>Select&nbsp;<strong>Advanced</strong>&nbsp;option from the dialog box.</p>
+    </li>
+    <li>
+        <p>Select&nbsp;<strong>Content&nbsp;</strong>from the listed items.</p>
+    </li>
+    <li>
+        <p>Select&nbsp;<strong>Enable JavaScript</strong>&nbsp;checkbox.</p>
+    </li>
+    <li>
+        <p>Finally click OK and come out.</p>
+    </li>
+</ul>
+<p>To disable JavaScript support in your Opera, you should not select the&nbsp;<strong>Enable JavaScript checkbox</strong>.</p>
+<h2>Warning for Non-JavaScript Browsers</h2>
+<p>If you have to do something important using JavaScript, then you can display a warning message to the user using&nbsp;<strong>&lt;noscript&gt;</strong>&nbsp;tags.</p>
+<p>You can add a&nbsp;<strong>noscript</strong>&nbsp;block immediately after the script block as follows &minus;</p>
+<pre class="prettyprint notranslate prettyprinted">
+    <code><span class="tag">&lt;html&gt;</span>
+   <span class="tag">&lt;body&gt;</span>
+
+      <span class="tag">&lt;script</span> <span class="atn">language</span><span class="pun">=</span><span class="atv">"javascript"</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+         <span class="pun">&lt;!--</span><span class="pln">
+            document</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="str">"Hello World!"</span><span class="pun">)</span>
+         <span class="com">//--&gt;</span>
+      <span class="tag">&lt;/script&gt;</span>
+
+      <span class="tag">&lt;noscript&gt;</span><span class="pln">
+         Sorry...JavaScript is needed to go ahead.
+      </span><span class="tag">&lt;/noscript&gt;</span>
+
+   <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
+<p>Now, if the user's browser does not support JavaScript or JavaScript is not enabled, then the message from &lt;/noscript&gt; will be displayed on the screen.</p>
+<p>&nbsp;</p>
+</body>
+</html>

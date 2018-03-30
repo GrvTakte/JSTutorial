@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "830221569928",
+    "firebase_url": "https://js-tutorial-e4492.firebaseio.com",
+    "project_id": "js-tutorial-e4492",
+    "storage_bucket": "js-tutorial-e4492.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830221569928:android:0b130ea043f4ed5c",
+        "android_client_info": {
+          "package_name": "com.gaurav.javascripttutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830221569928-blb5n1nephon77tojuffemr5p982o5pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaurav.javascripttutorial",
+            "certificate_hash": "4d0506b11510f9434def5365543541393b7a3252"
+          }
+        },
+        {
+          "client_id": "830221569928-3iv4ncq806pv1qr9nhr4ar2gos3494jh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gaurav.javascripttutorial",
+            "certificate_hash": "269a6bf2695ba0c07773611f4afe00f39e73569a"
+          }
+        },
+        {
+          "client_id": "830221569928-ff8d8ue5206o0itd0ig5qv6jivh0c2bh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvz94OO9XjNKqQK2EgEvvv4eyYAwBitWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830221569928-ff8d8ue5206o0itd0ig5qv6jivh0c2bh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

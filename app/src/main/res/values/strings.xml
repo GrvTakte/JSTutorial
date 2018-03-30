@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">JS Tutorial</string>
+
+    <string name="drawer_open">DrawerOpen</string>
+    <string name="drawer_close">DrawerClose</string>
+
+    <string name="google_api">AIzaSyBc5gWCHBDSU8rqJdtxGv9GDSxivm5haAE</string>
+
+    <!-- AIzaSyAvz94OO9XjNKqQK2EgEvvv4eyYAwBitWQ old api key-->
+
+    <string name="banner_ad_unit_id">ca-app-pub-1866624655077358/8812633752</string>
+    <string name="admob_intertial_ad">ca-app-pub-1866624655077358/3058033831</string>
+    <string name="interstitial_without_video">ca-app-pub-1866624655077358/5703564113</string>
+    <string name="admob_reward_video_ad">ca-app-pub-1866624655077358/3410913705</string>
+
+    <!--<string name="banner_ad_unit_id">ca-app-pub-1866624655077358/8812633752</string>
+    <string name="admob_intertial_ad"></string>
+    <string name="admob_reward_video_ad"></string>-->
+
+    <string name="fb_app_id">1583674718355475</string>
+    <string name="fb_login_protocol_scheme">fb1583674718355475</string>
+    <string name="SENDER_ID">830221569928</string>
+
+    <integer name="swing_anim_time">750</integer>
+
+    <string name="circle">
+    M527.023,71.8233 C780.213,71.8233,985.464,277.075,985.464,530.265
+    C985.464,783.455,780.213,988.707,527.023,988.707
+    C273.832,988.707,68.5809,783.455,68.5809,530.265
+    C68.5809,277.075,273.832,71.8233,527.023,71.8233 Z
+    </string>
+    <integer name="circle_original_width">1062</integer>
+    <integer name="circle_original_height">1062</integer>
+
+</resources>

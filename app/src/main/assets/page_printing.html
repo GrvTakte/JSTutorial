@@ -1,0 +1,63 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<p>Many times you would like to place a button on your webpage to print the content of that web page via an actual printer. JavaScript helps you to implement this functionality using the&nbsp;<strong>print</strong>&nbsp;function of&nbsp;<strong>window</strong>&nbsp;object.</p>
+<p>The JavaScript print function&nbsp;<strong>window.print()</strong>&nbsp;prints the current web page when executed. You can call this function directly using the&nbsp;<strong>onclick</strong>&nbsp;event as shown in the following example.</p>
+<h3>Example</h3>
+<p>Try the following example.</p>
+<pre class="prettyprint notranslate tryit prettyprinted"><span class="tag">&lt;html&gt;</span>
+   <span class="tag">&lt;head&gt;</span>
+
+      <span class="tag">&lt;script</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="tag">&gt;</span>
+         <span class="pun">&lt;!--</span>
+         <span class="com">//--&gt;</span>
+      <span class="tag">&lt;/script&gt;</span>
+
+   <span class="tag">&lt;/head&gt;</span>
+
+   <span class="tag">&lt;body&gt;</span>
+
+      <span class="tag">&lt;form&gt;</span>
+         <span class="tag">&lt;input</span> <span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span> <span class="atn">value</span><span class="pun">=</span><span class="atv">"Print"</span> <span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">window</span><span class="pun">.</span><span class="pln">print</span><span class="pun">()</span><span class="atv">"</span> <span class="tag">/&gt;</span>
+      <span class="tag">&lt;/form&gt;</span>
+
+   <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;html&gt;</span></pre>
+<p>&nbsp;</p>
+<p>Although it serves the purpose of getting a printout, it is not a recommended way. A printer friendly page is really just a page with text, no images, graphics, or advertising.</p>
+<p>You can make a page printer friendly in the following ways &minus;</p>
+<ul class="list">
+    <li>
+        <p>Make a copy of the page and leave out unwanted text and graphics, then link to that printer friendly page from the original.</p>
+    </li>
+    <li>
+        <p>If you do not want to keep an extra copy of a page, then you can mark your printable text using proper comments like &lt;!-- PRINT STARTS HERE --&gt;..... &lt;!-- PRINT ENDS HERE --&gt; and then you can use PERL or any other script in the background to purge printable text and display for final printing. We at Tutorialspoint use this method to provide print facility to our site visitors.</p>
+    </li>
+</ul>
+<h2>How to Print a Page</h2>
+<p>If you don&rsquo;t find the above facilities on a web page, then you can use the browser's standard toolbar to get print the web page. Follow the link as follows.</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="typ">File</span> <span class="pun">&rarr;</span>  <span class="typ">Print</span> <span class="pun">&rarr;</span> <span class="typ">Click</span><span class="pln"> OK  button</span><span class="pun">.</span></pre>
+</body>
+</html>

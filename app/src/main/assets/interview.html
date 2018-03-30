@@ -1,0 +1,817 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <style>
+  strong {
+      color:#FFA700;
+      font-size: 20px;
+  }
+  table {
+    background-color: #888785;
+        color: #ffffff;
+  }
+  pre{
+  background-color: #888785;
+  color: #ffffff
+  }
+  </style>
+</head>
+<body>
+  <p></p>
+  <p><strong>1. What is JavaScript?</strong></p>
+  <p>JavaScript is a client-side as well as server side scripting language that can be inserted into HTML pages and is understood by web browsers. JavaScript is also an Object Oriented Programming language</p>
+  <p><strong>2. Enumerate the differences between Java and JavaScript?</strong></p>
+  <p>Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for the different intent.&nbsp; Java is an object &ndash; oriented programming (OOPS) or structured programming language like C++ or C whereas JavaScript is a client-side scripting language and it is said to be unstructured programming.</p>
+  <p><strong>3. What are JavaScript Data Types?</strong></p>
+  <p>Following are the JavaScript Data types:</p>
+  <ul>
+  <li>Number</li>
+  <li>String</li>
+  <li>Boolean</li>
+  <li>Function</li>
+  <li>Object</li>
+  <li>Undefined</li>
+  </ul>
+  <p><strong>4. What is the use of isNaN function?</strong></p>
+  <p>isNan function returns true if the argument is not a number otherwise it is false.</p>
+  <p><strong>5. Between JavaScript and an ASP script, which is faster?</strong></p>
+  <p>JavaScript is faster. JavaScript is a client-side language and thus it does not need the assistance of the web server to execute. On the other hand, ASP is a server-side language and hence is always slower than JavaScript. &nbsp;Javascript now is also a server side language (nodejs).</p>
+  <p><strong>6. What is negative infinity?</strong></p>
+  <p>Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.</p>
+  <p><strong>7. Which company developed JavaScript?</strong></p>
+  <p>Netscape is the software company who developed JavaScript.</p>
+  <p><strong>8. What are undeclared and undefined variables?</strong></p>
+  <p>Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.</p>
+  <p>Undefined variables are those that are declared in the program but have not been given any value. If the program tries to read the value of an undefined variable, an undefined value is returned.</p>
+  <div id="crayon-59d24419e280c945718519" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-main">
+  <p><strong>9. What are global variables?</strong><strong>&nbsp;How are these variable declared and what are the problems associated with using them?</strong></p>
+  <p>Global variables are those that are available throughout the length of the code, that is, these have no scope. The var keyword is used to declare a local variable or object. If the var keyword is omitted, a global variable is declared.</p>
+  <p>Example:</p>
+  <p>// Declare a global globalVariable = &ldquo;Test&rdquo;;</p>
+  <p>The problems that are faced by using global variables are the clash of variable names of local and global scope. Also, it is difficult to debug and test the code that relies on global variables.</p>
+  <p><strong>10. What is a prompt box?</strong></p>
+  <p>A prompt box is a box which allows the user to enter input by providing a text box.&nbsp; Label and box will be provided to enter the text or number.</p>
+  <p><strong>11. What is &lsquo;this&rsquo; keyword in JavaScript?</strong></p>
+  <p>&lsquo;This&rsquo; keyword&nbsp;refers to the object from where it was called.</p>
+  <p><strong>12. Explain the working of timers in JavaScript? Also elucidate the drawbacks of using the timer, if any?</strong></p>
+  <p>Timers are used to execute a piece of code at a set time or also to repeat the code in a given interval of time. This is done by using the functions<strong> setTimeout, setInterval</strong> and <strong>clearInterval</strong>.</p>
+  <p>The <strong>setTimeout(function, delay)</strong> function is used to start a timer that calls a particular function after the mentioned delay. The<strong> setInterval(function, delay)</strong> function is used to repeatedly execute the given function in the mentioned delay and only halts when cancelled. The<strong> clearInterval(id)</strong> function instructs the timer to stop.</p>
+  <p>Timers are operated within a single thread, and thus events might queue up, waiting to be executed.</p>
+  <p><strong>13. Which symbol is used for comments in Javascript?</strong></p>
+  <p>// for Single line comments and</p>
+  <p>/* &nbsp; Multi</p>
+  <p>Line</p>
+  <p>Comment</p>
+  <p>*/</p>
+  <p><strong>14. What is the difference between ViewState and SessionState?</strong></p>
+  <p>&lsquo;ViewState&rsquo; is specific to a page in a session.</p>
+  <p>&lsquo;SessionState&rsquo; is specific to user specific data that can be accessed across all pages in the web application.</p>
+  <p><strong>15. What is === operator?</strong></p>
+  <p>=== is called as strict equality operator which returns true when the two operands are having the same value without any type conversion.</p>
+  <p><strong>16.&nbsp;</strong><strong>Explain how can you submit a form using JavaScript?</strong></p>
+  <p>To submit a form using JavaScript use document.form[0].submit();</p>
+  <p>document.form[0].submit();</p>
+  <p><strong>17.&nbsp;</strong><strong>Does JavaScript support automatic type conversion?</strong></p>
+  <p>Yes JavaScript does support automatic type conversion, it is the common way of type conversion used by JavaScript developers</p>
+  <p><strong>18.&nbsp;</strong><strong>Explain how to read and write a file using JavaScript?</strong></p>
+  <p>There are two ways to read and write a file using JavaScript</p>
+  <ul>
+  <li>Using JavaScript extensions</li>
+  <li>Using a web page and Active X objects</li>
+  </ul>
+  <p><strong>19. What are all the looping structures in JavaScript?</strong></p>
+  <p>Following are looping structures in Javascript:</p>
+  <ul>
+  <li>For</li>
+  <li>While</li>
+  <li>do-while loops</li>
+  </ul>
+  <p><strong>20. What is called Variable typing in Javascript?</strong></p>
+  <p>Variable typing is used to assign a number to a variable and the same variable can be assigned to a string.</p>
+  <p>Example</p>
+  <div id="crayon-59d24419e2813202747620" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2813202747620-1" class="crayon-line"><span class="crayon-v">i</span> <span class="crayon-o">=</span> <span class="crayon-cn">10</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2813202747620-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2813202747620-3" class="crayon-line"><span class="crayon-e">i</span> <span class="crayon-o">=</span> <span class="crayon-s">"string"</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p>This is called variable typing.</p>
+  <p><strong>21. How can you convert the string of any base to integer in JavaScript?</strong></p>
+  <p>The parseInt() function is used to convert numbers between different bases. parseInt() takes the string to be converted as its first parameter, and the second parameter is the base of the given string.</p>
+  <p>In order to convert 4F (of base 16) to integer, the code used will be &ndash;</p>
+  <div id="crayon-59d24419e2814894426686" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2814894426686-1" class="crayon-line"><span class="crayon-r">parseInt</span> <span class="crayon-sy">(</span><span class="crayon-s">"4F"</span><span class="crayon-sy">,</span> <span class="crayon-cn">16</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>22. Explain the difference between &ldquo;==&rdquo;&nbsp;and &ldquo;===&rdquo;?</strong></p>
+  <p>&ldquo;==&rdquo; checks only for equality in value whereas &ldquo;===&rdquo; is a stricter equality test and returns false if either the value or the type of the two variables are different.</p>
+  <p><strong>23. What would be the result of 3+2+&rdquo;7&Prime;?</strong></p>
+  <p>Since 3 and 2 are integers, they will be added numerically. And since 7 is a string, its concatenation will be done. So the result would be 57.</p>
+  <p><strong>24.&nbsp;</strong><strong>Explain how to detect the operating system on the client machine?</strong></p>
+  <p>In order to detect the operating system on the client machine, the navigator.appVersion string (property) should be used.</p>
+  <p><strong>25. What do mean by NULL in Javascript?</strong></p>
+  <p>The NULL value is used to represent no value or no object.&nbsp; It implies no object or null string, no valid boolean value, no number and no array object.</p>
+  <p><strong>26. What is the function of delete operator?</strong></p>
+  <p>The functionality of delete operator is used to delete all variables and objects in a program but it cannot delete variables declared with VAR keyword.</p>
+  <p><strong>27. What is an undefined value in JavaScript?</strong></p>
+  <p>Undefined value means the</p>
+  <ul>
+  <li>Variable used in the code doesn&rsquo;t exist</li>
+  <li>Variable is not assigned to any value</li>
+  <li>Property doesn&rsquo;t exist</li>
+  </ul>
+  <p><strong>28. What are all the types of Pop up boxes available in JavaScript?</strong></p>
+  <ul>
+  <li>Alert</li>
+  <li>Confirm and</li>
+  <li>Prompt</li>
+  </ul>
+  <p><strong>29. What is the use of Void(0)?</strong></p>
+  <p>Void(0) is used to prevent the page from refreshing and parameter &ldquo;zero&rdquo; is passed while calling.</p>
+  <p>Void(0) is used to call another method without refreshing the page.</p>
+  <p><strong>30. What is the data type of variables of in JavaScript?</strong></p>
+  <p>All variables in the JavaScript are object data types.</p>
+  <p><strong>31. What is the difference between an alert box and a confirmation box?</strong></p>
+  <p>An alert box displays only one button which is the OK button.</p>
+  <p>But a Confirmation box displays two buttons namely OK and cancel.</p>
+  <p><strong>32. What are escape characters?</strong></p>
+  <p>Escape characters (Backslash) is used when working with special characters like single quotes, double quotes, apostrophes and ampersands. Place backslash before the characters to make it display.</p>
+  <p>Example:</p>
+  <div id="crayon-59d24419e2817700515668" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2817700515668-1" class="crayon-line"><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-i">write</span> <span class="crayon-s">"I m a "</span><span class="crayon-i">good</span><span class="crayon-s">" boy"</span></div>
+  <div id="crayon-59d24419e2817700515668-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2817700515668-3" class="crayon-line"><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-i">write</span> <span class="crayon-s">"I m a \"good\" boy"</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>33. What are JavaScript Cookies?</strong></p>
+  <p>Cookies are the small test files stored in a computer and it gets created when the user visits the websites to store information that they need. Example could be User Name details and shopping cart information from the previous visits.</p>
+  <p><strong>34.&nbsp;</strong><strong>Explain what is pop()method in JavaScript?</strong></p>
+  <p>The pop() method is similar as the shift() method but the difference is that the Shift method works at the start of the array.&nbsp; Also the pop() method take the last element off of the given array and returns it. The array on which is called is then altered.<br />Example:<br />var cloths = [&ldquo;Shirt&rdquo;, &ldquo;Pant&rdquo;, &ldquo;TShirt&rdquo;];<br />cloths.pop();<br />//Now cloth becomes Shirt,Pant</p>
+  <p><strong>35. Whether JavaScript has concept level scope?</strong></p>
+  <p>No. JavaScript does not have concept level scope. The variable declared inside the function has scope inside the function.</p>
+  <p><strong>36.&nbsp;</strong><strong>Mention what is the disadvantage of using innerHTML in JavaScript?</strong></p>
+  <p>If you use innerHTML in JavaScript the disadvantage is</p>
+  <ul>
+  <li>Content is replaced everywhere</li>
+  <li>We cannot use like &ldquo;appending to innerHTML&rdquo;</li>
+  <li>Even if you use +=like &ldquo;innerHTML = innerHTML + &lsquo;html&rsquo;&rdquo; still the old content is replaced by html</li>
+  <li>The entire innerHTML content is re-parsed and build into elements, therefore its much slower</li>
+  <li>The innerHTML does not provide validation and therefore we can potentially insert valid and broken HTML in the document and break it</li>
+  </ul>
+  <p><strong>37. What is break and continue statements?</strong></p>
+  <p>Break statement exits from the current loop.</p>
+  <p>Continue statement continues with next statement of the loop.</p>
+  <p><strong>38. What are the two basic groups of dataypes in JavaScript?</strong></p>
+  <p>They are as &ndash;</p>
+  <ul>
+  <li>Primitive</li>
+  <li>Reference types.</li>
+  </ul>
+  <p>Primitive types are number and Boolean data types. Reference types are more complex types like strings and dates.</p>
+  <p><strong>39. How generic objects can be created?</strong></p>
+  <p>Generic objects can be created as:</p>
+  <div id="crayon-59d24419e2819199274240" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2819199274240-1" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-v">I</span> <span class="crayon-o">=</span> <span class="crayon-r">new</span> <span class="crayon-t">object</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>40. What is the use of type of operator?</strong></p>
+  <p>&lsquo;Typeof&rsquo; is an operator which is used to return a string description of the type of a variable.</p>
+  <p><strong>41. Which keywords are used to handle exceptions?</strong></p>
+  <p>Try&hellip; Catch&mdash;finally is used to handle exceptions in the JavaScript</p>
+  <div id="crayon-59d24419e281b476748672" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e281b476748672-1" class="crayon-line"><span class="crayon-st">Try</span><span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e281b476748672-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281b476748672-3" class="crayon-line"><span class="crayon-i">Code</span></div>
+  <div id="crayon-59d24419e281b476748672-4" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281b476748672-5" class="crayon-line"><span class="crayon-sy">}</span></div>
+  <div id="crayon-59d24419e281b476748672-6" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281b476748672-7" class="crayon-line"><span class="crayon-st">Catch</span><span class="crayon-sy">(</span><span class="crayon-v">exp</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e281b476748672-8" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281b476748672-9" class="crayon-line"><span class="crayon-e">Code </span><span class="crayon-st">to</span> <span class="crayon-st">throw</span> <span class="crayon-e">an </span><span class="crayon-i">exception</span></div>
+  <div id="crayon-59d24419e281b476748672-10" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281b476748672-11" class="crayon-line"><span class="crayon-sy">}</span></div>
+  <div id="crayon-59d24419e281b476748672-12" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281b476748672-13" class="crayon-line"><span class="crayon-st">Finally</span><span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e281b476748672-14" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281b476748672-15" class="crayon-line"><span class="crayon-e">Code </span><span class="crayon-e">runs </span><span class="crayon-e">either </span><span class="crayon-e">it </span><span class="crayon-e">finishes </span><span class="crayon-e">successfully </span><span class="crayon-st">or</span> <span class="crayon-e">after </span><span class="crayon-st">catch</span></div>
+  <div id="crayon-59d24419e281b476748672-16" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281b476748672-17" class="crayon-line"><span class="crayon-sy">}</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>42. Which keyword is used to print the text in the screen?</strong></p>
+  <p>document.write(&ldquo;Welcome&rdquo;) is used to print the text &ndash; Welcome in the screen.</p>
+  <p><strong>43. What is the use of blur function?</strong></p>
+  <p>Blur function is used to remove the focus from the specified object.</p>
+  <p><strong>44. What is variable typing?</strong></p>
+  <p>Variable typing is used to assign a number to a variable and then assign string to the same variable. Example is as follows:</p>
+  <div id="crayon-59d24419e281c915388751" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e281c915388751-1" class="crayon-line"><span class="crayon-v">i</span><span class="crayon-o">=</span> <span class="crayon-cn">8</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e281c915388751-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e281c915388751-3" class="crayon-line"><span class="crayon-v">i</span><span class="crayon-o">=</span>&rdquo;<span class="crayon-i">john</span>&rdquo;<span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>45. How to find operating system in the client machine using JavaScript?</strong></p>
+  <p>The&nbsp;&lsquo;<strong>Navigator.appversion&rsquo;</strong>&nbsp;is used to find the name of the operating system in the client machine.</p>
+  <p><strong>46. What are the different types of errors in JavaScript?</strong></p>
+  <p>There are three types of errors:</p>
+  <ul>
+  <li><strong>Load time errors</strong>: Errors which come up when loading a web page like improper syntax errors are known as Load time errors and it generates the errors dynamically.</li>
+  <li><strong>Run time errors</strong>: Errors that come due to misuse of the command inside the HTML language.</li>
+  <li><strong>Logical Errors</strong>: These are the errors that occur due to the bad logic performed on a function which is having different operation.</li>
+  </ul>
+  <p><strong>47. What is the use of Push method in JavaScript?</strong></p>
+  <p>The push method is used to add or append one or more elements to the end of an Array. Using this method, we can append multiple elements by passing multiple arguments</p>
+  <p><strong>48. What is unshift method in JavaScript?</strong></p>
+  <p>Unshift method is like push method which works at the beginning of the array.&nbsp; This method is used to prepend one or more elements to the beginning of the array.</p>
+  <p><strong>49. What is the difference between JavaScript and Jscript?</strong></p>
+  <p>Both are almost similar. JavaScript is developed by Netscape and Jscript was developed by Microsoft .</p>
+  <p><strong>50. How are object properties assigned?</strong></p>
+  <p>Properties are assigned to objects in the following way &ndash;</p>
+  <div id="crayon-59d24419e281e052877251" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e281e052877251-1" class="crayon-line"><span class="crayon-v">obj</span><span class="crayon-sy">[</span><span class="crayon-s">"class"</span><span class="crayon-sy">]</span> <span class="crayon-o">=</span> <span class="crayon-cn">12</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p>or</p>
+  <div id="crayon-59d24419e281f950830854" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e281f950830854-1" class="crayon-line"><span class="crayon-v">obj</span><span class="crayon-sy">.</span><span class="crayon-t">class</span> <span class="crayon-o">=</span> <span class="crayon-cn">12</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>51. What is the &lsquo;Strict&rsquo;&nbsp;mode in JavaScript and how can it be enabled?</strong></p>
+  <p>Strict Mode adds certain compulsions to JavaScript. Under the strict mode, JavaScript shows errors for a piece of codes, which did not show an error before, but might be problematic and potentially unsafe. Strict mode also solves some mistakes that hamper the JavaScript engines to work efficiently.</p>
+  <p>Strict mode can be enabled by adding the string literal &ldquo;use strict&rdquo;&nbsp;above the file. This can be illustrated by the given example:</p>
+  <div id="crayon-59d24419e2820864173937" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2820864173937-1" class="crayon-line"><span class="crayon-t">function</span> <span class="crayon-e">myfunction</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div>
+  <div id="crayon-59d24419e2820864173937-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2820864173937-3" class="crayon-line"><span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2820864173937-4" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2820864173937-5" class="crayon-line">&ldquo;<span class="crayon-st">use</span> <span class="crayon-i">strict</span><span class="crayon-s">";</span></div>
+  <div id="crayon-59d24419e2820864173937-6" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2820864173937-7" class="crayon-line"><span class="crayon-s">var v = &ldquo;This is a strict mode function"</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2820864173937-8" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2820864173937-9" class="crayon-line"><span class="crayon-sy">}</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>52. How can the OS of the client machine be detected?</strong></p>
+  <p>The navigator.appVersion string can be used to detect the operating system on the client machine.</p>
+  <p><strong>53. Explain window.onload and onDocumentReady?</strong></p>
+  <p>The onload function is not run until all the information on the page is loaded. This leads to a substantial delay before any code is executed.</p>
+  <p>onDocumentReady loads the code just after the DOM is loaded. This allows early manipulation of the code.</p>
+  <p><strong>54. How will you explain closures in JavaScript? When are they used?</strong></p>
+  <p>Closure is a locally declared variable related to a function which stays in memory when the function has returned.</p>
+  <p>For example:</p>
+  <div id="crayon-59d24419e2822964505666" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2822964505666-1" class="crayon-line"><span class="crayon-t">function</span> <span class="crayon-e">greet</span><span class="crayon-sy">(</span><span class="crayon-v">message</span><span class="crayon-sy">)</span> <span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2822964505666-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-3" class="crayon-line"><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-v">message</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2822964505666-4" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-5" class="crayon-line"><span class="crayon-sy">}</span></div>
+  <div id="crayon-59d24419e2822964505666-6" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-7" class="crayon-line"><span class="crayon-t">function</span> <span class="crayon-e">greeter</span><span class="crayon-sy">(</span><span class="crayon-r">name</span><span class="crayon-sy">,</span> <span class="crayon-v">age</span><span class="crayon-sy">)</span> <span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2822964505666-8" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-9" class="crayon-line"><span class="crayon-st">return</span> <span class="crayon-r">name</span> <span class="crayon-o">+</span> <span class="crayon-s">" says howdy!! He is "</span> <span class="crayon-o">+</span> <span class="crayon-v">age</span> <span class="crayon-o">+</span> <span class="crayon-s">" years old"</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2822964505666-10" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-11" class="crayon-line"><span class="crayon-sy">}</span></div>
+  <div id="crayon-59d24419e2822964505666-12" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-13" class="crayon-line"><span class="crayon-c">// Generate the message</span></div>
+  <div id="crayon-59d24419e2822964505666-14" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-15" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-v">message</span> <span class="crayon-o">=</span> <span class="crayon-e">greeter</span><span class="crayon-sy">(</span><span class="crayon-s">"James"</span><span class="crayon-sy">,</span> <span class="crayon-cn">23</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2822964505666-16" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-17" class="crayon-line"><span class="crayon-c">// Pass it explicitly to greet</span></div>
+  <div id="crayon-59d24419e2822964505666-18" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-19" class="crayon-line"><span class="crayon-e">greet</span><span class="crayon-sy">(</span><span class="crayon-v">message</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2822964505666-20" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-21" class="crayon-line"><span class="crayon-r">This</span> <span class="crayon-t">function</span> <span class="crayon-e">can </span><span class="crayon-e">be </span><span class="crayon-e">better </span><span class="crayon-e">represented </span><span class="crayon-e">by </span><span class="crayon-e">using </span><span class="crayon-e">closures</span></div>
+  <div id="crayon-59d24419e2822964505666-22" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-23" class="crayon-line"><span class="crayon-t">function</span> <span class="crayon-e">greeter</span><span class="crayon-sy">(</span><span class="crayon-r">name</span><span class="crayon-sy">,</span> <span class="crayon-v">age</span><span class="crayon-sy">)</span> <span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2822964505666-24" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-25" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-v">message</span> <span class="crayon-o">=</span> <span class="crayon-r">name</span> <span class="crayon-o">+</span> <span class="crayon-s">" says howdy!! He is "</span> <span class="crayon-o">+</span> <span class="crayon-v">age</span> <span class="crayon-o">+</span> <span class="crayon-s">" years old"</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2822964505666-26" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-27" class="crayon-line"><span class="crayon-st">return</span> <span class="crayon-t">function</span> <span class="crayon-e">greet</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span> <span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2822964505666-28" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-29" class="crayon-line"><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-v">message</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2822964505666-30" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-31" class="crayon-line"><span class="crayon-sy">}</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2822964505666-32" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-33" class="crayon-line"><span class="crayon-sy">}</span></div>
+  <div id="crayon-59d24419e2822964505666-34" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-35" class="crayon-line"><span class="crayon-c">// Generate the closure</span></div>
+  <div id="crayon-59d24419e2822964505666-36" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-37" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-v">JamesGreeter</span> <span class="crayon-o">=</span> <span class="crayon-e">greeter</span><span class="crayon-sy">(</span><span class="crayon-s">"James"</span><span class="crayon-sy">,</span> <span class="crayon-cn">23</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2822964505666-38" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-39" class="crayon-line"><span class="crayon-c">// Use the closure</span></div>
+  <div id="crayon-59d24419e2822964505666-40" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2822964505666-41" class="crayon-line"><span class="crayon-e">JamesGreeter</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>55. How can a value be appended to an array?</strong></p>
+  <p>A value can be appended to an array in the given manner &ndash;</p>
+  <p>arr[arr.length] = value;</p>
+  <p><strong>56. Explain the for-in loop?</strong></p>
+  <p>The for-in loop is used to loop through the properties of an object.</p>
+  <p>The syntax for the for-in loop is &ndash;</p>
+  <div id="crayon-59d24419e2823924873576" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2823924873576-1" class="crayon-line"><span class="crayon-st">for</span> <span class="crayon-sy">(</span><span class="crayon-e">variable </span><span class="crayon-r">name</span> <span class="crayon-st">in</span> <span class="crayon-t">object</span><span class="crayon-sy">)</span><span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2823924873576-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2823924873576-3" class="crayon-line"><span class="crayon-e">statement </span><span class="crayon-st">or</span> <span class="crayon-e">block </span><span class="crayon-st">to</span> <span class="crayon-i">execute</span></div>
+  <div id="crayon-59d24419e2823924873576-4" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2823924873576-5" class="crayon-line"><span class="crayon-sy">}</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p>In each repetition, one property from the object is associated to the variable name, and the loop is continued till all the properties of the object are depleted.</p>
+  <p><strong>57. Describe the properties of an anonymous function in JavaScript?</strong></p>
+  <p>A function that is declared without any named identifier is known as an anonymous function. In general, an anonymous function is inaccessible after its declaration.</p>
+  <p>Anonymous function declaration &ndash;</p>
+  <div id="crayon-59d24419e2826168261290" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2826168261290-1" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-v">anon</span> <span class="crayon-o">=</span> <span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span> <span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2826168261290-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2826168261290-3" class="crayon-line"><span class="crayon-r">alert</span><span class="crayon-sy">(</span><span class="crayon-s">'I am anonymous'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2826168261290-4" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2826168261290-5" class="crayon-line"><span class="crayon-sy">}</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2826168261290-6" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2826168261290-7" class="crayon-line"><span class="crayon-e">anon</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>58. What is the difference between .call() and .apply()?</strong></p>
+  <p>The function .call() and .apply() are very similar in their usage except a little difference. .call() is used when the number of the function&rsquo;s arguments are known to the programmer, as they have to be mentioned as arguments in the call statement. On the other hand, .apply() is used when the number is not known. The function .apply() expects the argument to be an array.</p>
+  <p>The basic difference between .call() and .apply() is in the way arguments are passed to the function. Their usage can be illustrated by the given example.</p>
+  <div id="crayon-59d24419e2827877789956" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2827877789956-1" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-v">someObject</span> <span class="crayon-o">=</span> <span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2827877789956-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-3" class="crayon-line"><span class="crayon-v">myProperty</span> <span class="crayon-o">:</span> <span class="crayon-s">'Foo'</span><span class="crayon-sy">,</span></div>
+  <div id="crayon-59d24419e2827877789956-4" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-5" class="crayon-line"><span class="crayon-v">myMethod</span> <span class="crayon-o">:</span> <span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-v">prefix</span><span class="crayon-sy">,</span> <span class="crayon-v">postfix</span><span class="crayon-sy">)</span> <span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2827877789956-6" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-7" class="crayon-line"><span class="crayon-r">alert</span><span class="crayon-sy">(</span><span class="crayon-v">prefix</span> <span class="crayon-o">+</span> <span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-v">myProperty</span> <span class="crayon-o">+</span> <span class="crayon-v">postfix</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2827877789956-8" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-9" class="crayon-line"><span class="crayon-sy">}</span></div>
+  <div id="crayon-59d24419e2827877789956-10" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-11" class="crayon-line"><span class="crayon-sy">}</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2827877789956-12" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-13" class="crayon-line"><span class="crayon-v">someObject</span><span class="crayon-sy">.</span><span class="crayon-e">myMethod</span><span class="crayon-sy">(</span><span class="crayon-s">'&lt;'</span><span class="crayon-sy">,</span> <span class="crayon-s">'&gt;'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span> <span class="crayon-c">// alerts '&lt;Foo&gt;'</span></div>
+  <div id="crayon-59d24419e2827877789956-14" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-15" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-i">someOtherObject</span>&nbsp; <span class="crayon-o">=</span> <span class="crayon-sy">{</span></div>
+  <div id="crayon-59d24419e2827877789956-16" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-17" class="crayon-line"><span class="crayon-v">myProperty</span> <span class="crayon-o">:</span> <span class="crayon-s">'Bar'</span></div>
+  <div id="crayon-59d24419e2827877789956-18" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-19" class="crayon-line"><span class="crayon-sy">}</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2827877789956-20" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-21" class="crayon-line"><span class="crayon-v">someObject</span><span class="crayon-sy">.</span><span class="crayon-v">myMethod</span><span class="crayon-sy">.</span><span class="crayon-e">call</span><span class="crayon-sy">(</span><span class="crayon-v">someOtherObject</span><span class="crayon-sy">,</span> <span class="crayon-s">'&lt;'</span><span class="crayon-sy">,</span> <span class="crayon-s">'&gt;'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span> <span class="crayon-c">// alerts '&lt;Bar&gt;'</span></div>
+  <div id="crayon-59d24419e2827877789956-22" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2827877789956-23" class="crayon-line"><span class="crayon-v">someObject</span><span class="crayon-sy">.</span><span class="crayon-v">myMethod</span><span class="crayon-sy">.</span><span class="crayon-e">apply</span><span class="crayon-sy">(</span><span class="crayon-v">someOtherObject</span><span class="crayon-sy">,</span> <span class="crayon-sy">[</span><span class="crayon-s">'&lt;'</span><span class="crayon-sy">,</span> <span class="crayon-s">'&gt;'</span><span class="crayon-sy">]</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span> <span class="crayon-c">// alerts '&lt;Bar&gt;'</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>59. Define event bubbling?</strong></p>
+  <p>JavaScript allows DOM elements to be nested inside each other. In such a case, if the handler of the child is clicked, the handler of parent will also work as if it were clicked too.</p>
+  <p><strong>60. Is JavaScript case sensitive? Give an example?</strong></p>
+  <p>Yes,&nbsp;JavaScript is case sensitive. For example, a function parseInt is not same as the function Parseint.</p>
+  <p><strong>61. What boolean operators can be used in JavaScript?</strong></p>
+  <p>The &lsquo;And&rsquo;&nbsp;Operator (&amp;&amp;), &lsquo;Or&rsquo;&nbsp; Operator (||) and the &lsquo;Not&rsquo;&nbsp;Operator (!) can be used in JavaScript.</p>
+  <p>*Operators are without the parenthesis.</p>
+  <p><strong>62. How can a particular frame be targeted, from a hyperlink, in JavaScript?</strong></p>
+  <p>This can be done by including the name of the required frame in the hyperlink using the &lsquo;target&rsquo; attribute.</p>
+  <div id="crayon-59d24419e2829521234094" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2829521234094-1" class="crayon-line"><span class="crayon-r">&lt;a </span>href<span class="crayon-o">=</span>&rdquo;newpage<span class="crayon-sy">.</span>htm&rdquo; target<span class="crayon-o">=</span>&rdquo;newframe&rdquo;<span class="crayon-r">&gt;</span><span class="crayon-r">&gt;</span><span class="crayon-i">New Page</span><span class="crayon-r">&lt;/a&gt;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>63. What is the role of break and continue statements?</strong></p>
+  <p>Break statement is used to come out of the current loop while the continue statement continues the current loop with a new recurrence.</p>
+  <p><strong>64. Write the point of difference between web-garden and a web-farm?</strong></p>
+  <p>Both web-garden and web-farm are web hosting systems. The only difference is that web-garden is a setup that includes many processors in a single server while web-farm is a larger setup that uses more than one server.</p>
+  <p><strong>65. How are object properties assigned?</strong></p>
+  <p>Assigning properties to objects is done in the same way as a value is assigned to a variable. For example, a form object&rsquo;s action value is assigned as &lsquo;submit&rsquo;&nbsp;in the following manner &ndash; Document.form.action=&rdquo;submit&rdquo;</p>
+  <p><strong>66. What is the method for reading and writing a file in JavaScript?</strong></p>
+  <p>This can be done by Using JavaScript extensions (runs from JavaScript Editor), example for opening of a file &ndash;</p>
+  <div id="crayon-59d24419e282a931275418" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e282a931275418-1" class="crayon-line"><span class="crayon-v">fh</span> <span class="crayon-o">=</span> <span class="crayon-e">fopen</span><span class="crayon-sy">(</span><span class="crayon-e">getScriptPath</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">,</span> <span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>67. How are DOM utilized in JavaScript?</strong></p>
+  <p>DOM stands for Document Object Model and is responsible for how various objects in a document interact with each other. DOM is required for developing web pages, which includes objects like paragraph, links, etc. These objects can be operated to include actions like add or delete. DOM is also required to add extra capabilities to a web page. On top of that, the use of API gives an advantage over other existing models.</p>
+  <p><strong>68. How are event handlers utilized in JavaScript?</strong></p>
+  <p>Events are the actions that result from activities, such as clicking a link or filling a form, by the user. An event handler is required to manage proper execution of all these events. Event handlers are an extra attribute of the object. This attribute includes event&rsquo;s name and the action taken if the event takes place.</p>
+  <p><strong>69. Explain the role of deferred scripts in JavaScript?</strong></p>
+  <p>By default, the parsing of the HTML code, during page loading, is paused until the script has not stopped executing. It means, if the server is slow or the script is particularly heavy, then the webpage is displayed with a delay. While using Deferred, scripts delays execution of the script till the time HTML parser is running. This reduces the loading time of web pages and they get displayed faster.</p>
+  <p><strong>70. What are the various functional components in JavaScript?</strong></p>
+  <p>The different functional components in JavaScript are-</p>
+  <p><strong>First-class functions:</strong>&nbsp;Functions in JavaScript are utilized as first class objects. This usually means that these functions can be passed as arguments to other functions, returned as values from other functions, assigned to variables or can also be stored in data structures.</p>
+  <p><strong>Nested functions:</strong>&nbsp;The functions, which are defined inside other functions, are called Nested functions. They are called &lsquo;everytime&rsquo; the main function is invoked.</p>
+  <p><strong>71. Write about the errors shown in JavaScript?</strong></p>
+  <p>JavaScript gives a message if it encounters an error. The recognized errors are &ndash;</p>
+  <ul>
+  <li>Load-time errors: The errors shown at the time of the page loading are counted under Load-time errors. These errors are encountered by the use of improper syntax, and thus are detected while the page is getting loaded.</li>
+  <li>Run-time errors:&nbsp;This is the error that comes up while the program is running. It is caused by illegal operations, for example, division of a number by zero, or trying to access a non-existent area of the memory.</li>
+  <li>Logic errors:&nbsp;It is caused by the use of syntactically correct code, which does not fulfill the required task. For example, an infinite loop.</li>
+  </ul>
+  <p><strong>72. What are Screen objects?</strong></p>
+  <p>Screen objects are used to read the information from the client&rsquo;s screen. The properties of screen objects are &ndash;</p>
+  <ul>
+  <li>AvailHeight: Gives the height of client&rsquo;s screen</li>
+  <li>AvailWidth: Gives the width of client&rsquo;s screen.</li>
+  <li>ColorDepth: Gives the bit depth of images on the client&rsquo;s screen</li>
+  <li>Height: Gives the total height of the client&rsquo;s screen, including the taskbar</li>
+  <li>Width: Gives the total width of the client&rsquo;s screen, including the taskbar</li>
+  </ul>
+  <p><strong>73. Explain the unshift() method ?</strong></p>
+  <p>This method is functional at the starting of the array, unlike the push(). It adds the desired number of elements to the top of an array. For example &ndash;</p>
+  <div id="crayon-59d24419e282d854093793" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e282d854093793-1" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-r">name</span> <span class="crayon-o">=</span> <span class="crayon-sy">[</span> <span class="crayon-s">"john"</span> <span class="crayon-sy">]</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e282d854093793-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e282d854093793-3" class="crayon-line"><span class="crayon-v">name</span><span class="crayon-sy">.</span><span class="crayon-e">unshift</span><span class="crayon-sy">(</span> <span class="crayon-s">"charlie"</span> <span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e282d854093793-4" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e282d854093793-5" class="crayon-line"><span class="crayon-v">name</span><span class="crayon-sy">.</span><span class="crayon-e">unshift</span><span class="crayon-sy">(</span> <span class="crayon-s">"joseph"</span><span class="crayon-sy">,</span> <span class="crayon-s">"Jane"</span> <span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e282d854093793-6" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e282d854093793-7" class="crayon-line"><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-r">name</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p>The output is shown below:</p>
+  <div id="crayon-59d24419e282f667334869" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e282f667334869-1" class="crayon-line"><span class="crayon-sy">[</span><span class="crayon-s">" joseph "</span><span class="crayon-sy">,</span><span class="crayon-s">" Jane "</span><span class="crayon-sy">,</span> <span class="crayon-s">" charlie "</span><span class="crayon-sy">,</span> <span class="crayon-s">" john "</span><span class="crayon-sy">]</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p><strong>74. What are the decodeURI() and encodeURI()?</strong></p>
+  <p>EncodeURl() is used to convert URL into their hex coding. And DecodeURI() is used to convert the encoded URL back to normal.</p>
+  <div id="crayon-59d24419e2832877413829" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2832877413829-1" class="crayon-line"><span class="crayon-ta">&lt;script&gt;</span></div>
+  <div id="crayon-59d24419e2832877413829-2" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2832877413829-3" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-e">uri</span><span class="crayon-o">=</span><span class="crayon-s">"my test.asp?name=st&aring;le&amp;car=saab"</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2832877413829-4" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2832877413829-5" class="crayon-line"><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">write</span><span class="crayon-sy">(</span><span class="crayon-e">encodeURI</span><span class="crayon-sy">(</span><span class="crayon-v">uri</span><span class="crayon-sy">)</span><span class="crayon-o">+</span> <span class="crayon-s">"&lt;br&gt;"</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2832877413829-6" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2832877413829-7" class="crayon-line"><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">write</span><span class="crayon-sy">(</span><span class="crayon-e">decodeURI</span><span class="crayon-sy">(</span><span class="crayon-v">uri</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div>
+  <div id="crayon-59d24419e2832877413829-8" class="crayon-line crayon-striped-line">&nbsp;</div>
+  <div id="crayon-59d24419e2832877413829-9" class="crayon-line"><span class="crayon-ta">&lt;/script&gt;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p>Output &ndash;</p>
+  <p><em>my%20test.asp?name=st%C3%A5le&amp;car=saab</em></p>
+  <p><em>my test.asp?name=st&aring;le&amp;car=saab</em></p>
+  <p><strong>75. Why it is not advised to use innerHTML in JavaScript?</strong></p>
+  <p>innerHTML content is refreshed every time and thus is slower. There is no scope for validation in innerHTML and, therefore, it is easier to insert rouge code in the document and, thus, make the web page unstable.</p>
+  <p><strong>76. What does the following statement declares?</strong></p>
+  <div id="crayon-59d24419e2833647087825" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover">
+  <div class="crayon-plain-wrap">&nbsp;</div>
+  <div class="crayon-main">
+  <table class="crayon-table" border="1px">
+  <tbody>
+  <tr class="crayon-row">
+  <td class="crayon-code">
+  <div class="crayon-pre">
+  <div id="crayon-59d24419e2833647087825-1" class="crayon-line"><span class="crayon-t">var</span> <span class="crayon-v">myArray</span> <span class="crayon-o">=</span> <span class="crayon-sy">[</span><span class="crayon-sy">[</span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-sy">]</span><span class="crayon-sy">]</span><span class="crayon-sy">;</span></div>
+  </div>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  <p>It declares a three dimensional array.</p>
+  <p><strong>77. How are JavaScript and ECMA Script related?</strong></p>
+  <p>ECMA Script are like rules and guideline while Javascript is a scripting language used for web development.</p>
+  <p><strong>78.&nbsp;What is namespacing in JavaScript and how is it used?</strong></p>
+  <p>Namespacing is used for grouping the desired functions, variables etc. under a unique name. It is a name that has been attached to the desired functions, objects and properties. This improves modularity in the coding and enables code reuse.</p>
+  <p><strong>79.&nbsp;How can JavaScript codes be hidden from old browsers that don&rsquo;t support JavaScript?</strong></p>
+  <p>For hiding JavaScript codes from old browsers:</p>
+  <p>Add &ldquo;&lt;!&ndash;&rdquo;&nbsp;without the quotes in the code just after the &lt;script&gt; tag.</p>
+  <p>Add &ldquo;//&ndash;&gt;&rdquo;&nbsp;without the quotes in the code just before the &lt;script&gt; tag.</p>
+  <p>Old browsers will now treat this JavaScript code as a long HTML comment. While, a browser that supports JavaScript, will take the &ldquo;&lt;!&ndash;&rdquo;&nbsp;and &ldquo;//&ndash;&gt;&rdquo;&nbsp;as one-line comments.</p>
+  <p><strong>80.What are the advantages of using JavaScript?</strong></p>
+  <p>You want a developer who really knows how to play to the strengths of your chosen platform. Some key advantages of JavaScript are listed below for your convenience.</p>
+  <ul>
+  <li><strong>Lightweight</strong>: JavaScript can be executed within the user&rsquo;s browser without having to communicate with the server, saving on bandwidth.</li>
+  <li><strong>Versatile</strong>: JavaScript supports multiple programming paradigms&mdash;object-oriented, imperative, and functional programming and can be used on both front-end and server-side technologies.</li>
+  <li><strong>Sleek Interactivity</strong>: Because tasks can be completed within the browser without communicating with the server, JavaScript can create a smooth &ldquo;desktop-like&rdquo; experience for the end user.</li>
+  <li><strong>Rich Interfaces</strong>: From drag-and-drop blocks to stylized sliders, there are numerous ways that JavaScript can be used to enhance a website&rsquo;s UI/UX.</li>
+  <li><strong>Prototypal Inheritance</strong>: Objects can inherit from other objects, which makes JavaScript so simple, powerful, and great for dynamic applications.</li>
+  </ul>
+  <p><strong>81. What are the disadvantages of using JavaScript?</strong></p>
+  <p>Experienced coders won&rsquo;t just be able to rave about their favorite language&rsquo;s strengths&mdash;they will also be able to talk about its weaknesses. JavaScript&rsquo;s main weakness is security. Look for answers on how it can be exploited. A secondary weakness is JavaScript&rsquo;s ubiquity and versatility&mdash;it can be a double-edged sword in that there&rsquo;s a lot of room for programming quirks that can lead to inconsistent performance across different platforms.</p>
+  <p><strong>82. Explain the difference between classical inheritance and prototypal inheritance.</strong></p>
+  <p>The great thing about JavaScript is the ability to do away with the rigid rules of classical inheritance and let objects inherit properties from other objects.</p>
+  <ul>
+  <li><strong>Classical Inheritance:</strong>&nbsp;A constructor function instantiates an instance via the &ldquo;new&rdquo; keyword. This new instance inherits properties from a parent class.</li>
+  <li><strong>Prototypal Inheritance</strong>: An instance is created by cloning an existing object that serves as a prototype. This instance&mdash;often instantiated using a factory function or &ldquo;Object.create()&rdquo;&mdash;can benefit from selective inheritance from many different objects.</li>
+  </ul>
+  <p><strong>83. Give an example of a time that you used functional programming in JavaScript.</strong></p>
+  <p>Functional programming is one of the key paradigms that makes JavaScript stand out from other languages. Look for examples of functional purity, first-class functions, higher-order functions, or using functions as arguments and values. It&rsquo;s also a good sign if they have past experience working with functional languages like Lisp, Haskell, Erlang, or Clojure.</p>
+  <p><strong>84. Give an example of a time that you used Prototypal OO in JavaScript.</strong></p>
+  <p>Prototypal OO is the other major programming paradigm that really lets JavaScript shine&mdash;objects linked to other objects (OLOO). You&rsquo;re looking for knowledge of when and where to use prototypes, liberal use of &ldquo;Object.assign()&rdquo; or mixins, and a solid grasp of concepts like delegation and concatenative inheritance.</p>
+  <p><strong>85. What is a RESTful Web Service?</strong></p>
+  <p>REST stands for Representational State Transfer, an architectural style that has largely been adopted as a best practice for building web and mobile applications. RESTful services are designed to be lightweight, easy to maintain, and scaleable. They are typically based on the HTTP protocol, make explicit use of HTTP methods (GET, POST, PUT, DELETE), are stateless, use intuitive URIs, and transfer XML/JSON data between the server and the client.</p>
+  <p><strong>86. Which frameworks are you most familiar with?</strong></p>
+  <p>You can tell a lot about a programmer from the frameworks they&rsquo;re familiar with&mdash;AngularJS, React, jQuery, Backbone, Aurelia, and Meteor are just some of the more popular ones available. The key here is to make sure the developer you&rsquo;re engaging has experience with the framework you&rsquo;ve chosen for your project.</p>
+  <p><strong>87. How experienced are you with MEAN?</strong></p>
+  <p>The MEAN (MongoDB, Express, AngularJS, and Node.js) stack is the most popular open-source JavaScript software stack available for building dynamic web apps&mdash;the primary advantage being that you can write both the server-side and client-side halves of the web project entirely in JavaScript. Even if you aren&rsquo;t intending to use MEAN for your project, you can still learn a lot about the developer when they recount their experiences using JavaScript for different aspects of web development.</p>
+  <p><strong>88. Explain the differences between one-way data flow and two-way data binding.</strong></p>
+  <p>This question may seem self-explanatory, but what you&rsquo;re looking for is a developer who can demonstrate solid understanding of how data flows throughout the application. In two-way data binding, changes to the UI and changes to the model occur asynchronously&mdash;a change on one end is reflected on the other. In one-way data binding, data only flows one way, and any changes that the user makes to the view will not be reflected in the model until the two are synced. Angular makes implementing two-way binding a snap, whereas React would be your framework of choice for deterministic one-way data flow.</p>
+  <p><strong>89. Determine the output of the code below. Explain your answer.</strong></p>
+  <pre class=" __code-snippet">console.log(0.1 + 0.2);
+    console.log(0.4 + 0.1 == 0.5);</pre>
+  <p>This is a trick question in that at first glance, you might expect the console to print out &ldquo;0.3&rdquo; and &ldquo;true.&rdquo; The correct answer is that you can&rsquo;t know for sure, because of how JavaScript treats floating point values. In fact, in the above example, it will print out:</p>
+  <pre class=" __code-snippet">0.30000000000000004
+    false</pre>
+  <p><strong>90. Determine the output of the code below. Explain your answer.</strong></p>
+  <pre class=" __code-snippet">var myObject = {
+          egg: &ldquo;plant&rdquo;,
+          func: function() {
+                var self = this;
+                console.log(&ldquo;outer func: this.egg = &ldquo; + this.egg);
+                console.log(&ldquo;outer func: self.egg = &ldquo; + self.egg);
+               (function() {
+                console.log(&ldquo;inner func: this.egg = &ldquo; + this.egg);
+                console.log(&ldquo;inner func: self.egg = &ldquo; + self.egg);
+                }());
+           }
+    };
+    myObject.func();</pre>
+  <p>This question is designed to test the interviewee&rsquo;s understanding of scope and the &ldquo;this&rdquo; keyword. In the outer function, both &ldquo;this&rdquo; and &ldquo;self&rdquo; correctly refer to &ldquo;myObject&rdquo; and can subsequently access &ldquo;egg.&rdquo; In the inner function, &ldquo;self&rdquo; remains within scope while &ldquo;this&rdquo; can no longer refer to &ldquo;myObject&rdquo;&mdash;resulting in the output below:</p>
+  <pre class=" __code-snippet">outer func:  this.egg = plant
+    outer func:  self.egg = plant
+    inner func:  this.egg = undefined
+    inner func:  self.egg = plant</pre>
+  <p><strong>91. Write a function that can determine whether a string is a palindrome in under 100 characters.</strong></p>
+  <p>A palindrome is a word, phrase, or sequence of letters that reads the same backwards or forwards. It also makes a great test for checking their ability to handle strings.</p>
+  <pre class=" __code-snippet">function isPalindrome(str) {
+        str = str.replace(/s/g, '').toLowerCase();
+        return (str == str.split('').reverse().join(''));
+    }</pre>
+  <p><strong>92. How would you empty the array below?</strong></p>
+  <div class="__answer content bg-white">
+  <div class="text-long m-b-0">
+  <pre class=" __code-snippet">Var emptyArray = [&lsquo;this&rsquo;, &lsquo;array&rsquo;, &lsquo;is&rsquo;, &lsquo;full&rsquo;];</pre>
+  <p>This deceptively simple question is designed to test your prospective coder&rsquo;s awareness of mitigating potential bugs when solving problems. The easiest method would be to set &ldquo;emptyArray&rdquo; equal to &ldquo;[ ]&rdquo;&mdash;which creates a new empty array. However, if the array is referenced anywhere else, the original array will remain unchanged. A more robust method would be &ldquo;emptyArray.length &ndash; 0;&rdquo;&mdash;which not only clears the array but updates all reference variables that point to this original array. Some possible solutions are listed below:</p>
+  <pre class=" __code-snippet">emptyArray.length = 0;
+
+
+    emptyArray.splice(0, emptyArray.length);
+
+
+    while(emptyArray.length){
+        emptyArray.pop();
+    }
+
+
+    emptyArray = []</pre>
+  </div>
+  </div>
+  <p><strong>93. Determine the output of the code below. Explain your answer.</strong></p>
+  <pre class=" __code-snippet">var lorem = { ipsum : 1};
+    var output = (function(){
+        delete lorem.ipsum;
+        return lorem.ipsum;
+      })();
+
+      console.log(output);</pre>
+  <p>The output would be undefined, because the delete operator removed the property &ldquo;ipsum&rdquo; from the object &ldquo;lorem&rdquo; before the object was returned. When you reference a deleted property, the result is undefined.</p>
+  <p><strong>94. Are you a team player? Give an example of a time when you had to resolve a conflict with another member on your team.</strong></p>
+  <p>There are many jobs associated with putting together an application, and chances are high that your new JavaScript developer will at the very least have to interface with a designer. You&rsquo;re looking for a developer who can communicate effectively when they need to, responds to emails, and knows how to coordinate with other branches of a project.</p>
+  <p><strong>95. Diffrence between Client side Javascript and Server side Javascript?</strong></p>
+  <p><strong>Client side JavaScript</strong>&nbsp;comprises the basic language and predefined objects which are relevant to running java script in a browser. The client side JavaScript is embedded directly by in the HTML pages. This script is interpreted by the browser at run time.</p>
+  <p><strong>Server side JavaScript</strong>&nbsp;also resembles like client side java script. It has relevant java script which is to run in a server. The server side JavaScript are deployed only after compilation.</p>
+  <p><strong>96. In which location cookies are stored on hard disk?</strong></p>
+  <p>The storage of cookies on the hard disk depends on OS and the browser.</p>
+  <p>The Netscape navigator on Windows uses cookies.txt file that contains all the cookies. The path is : c:\Program Files\Netscape\Users\username\cookies.txt</p>
+  <p>The Internet Explorer stores the cookies on a file username@website.txt. The path is: c:\Windows\Cookies\username@Website.txt.</p>
+  <p><strong>97. What is negative infinity?</strong></p>
+  <p>Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.</p>
+  <p><strong>98. What are the popup boxes available in Javascript?</strong></p>
+  <ul class="points">
+  <li>Alert Box</li>
+  <li>Confirm Box</li>
+  <li>Prompt Box</li>
+  </ul>
+  <p><strong>99. How can we detect OS of the client machine using Javascript?</strong></p>
+  <p>The&nbsp;<strong>navigator.appVersion</strong>&nbsp;string can be used to detect the operating system on the client machine.</p>
+  <p><strong>100. What is the use of history object?</strong></p>
+  <p>The history object of browser can be used to switch to history pages such as back and forward from current page or another page. There are three methods of history object.</p>
+  <ol>
+  <li>history.back()</li>
+  <li>history.forward()</li>
+  <li>history.go(number): number may be positive for forward, negative for backward.</li>
+  </ol>
+  <p>&nbsp;</p>
+    </div>
+</div>
+</body>
+</html>

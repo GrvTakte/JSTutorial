@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".subactivities.QuizResultActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_quiz_result"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@color/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <com.github.glomadrian.grav.GravView
+        android:id="@+id/grav"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        app:animationGenerators="@array/path"
+        android:layout_marginTop="140dp"
+        app:array_colors="@array/red"
+        app:ball_size_from_size="3dp"
+        app:ball_size_to_size="6dp"
+        app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+        app:gravGenerator="com.github.glomadrian.grav.generator.grav.BallGenerator"
+        app:path="@string/circle"
+        app:path_max_duration="6000"
+        app:path_min_duration="5000"
+        app:path_original_height="@integer/circle_original_height"
+        app:path_original_width="@integer/circle_original_width"
+        app:path_variance_from="-10dp"
+        app:path_variance_to="12dp"
+        app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"
+        app:regular_cell_size="150"
+        app:regular_variance="100" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Score"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/josefinsans_light"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp">
+
+            <TextView
+                android:id="@+id/quiz_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="50dp"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="50dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textColor="@color/colorPrimary"
+                android:textSize="50dp"/>
+
+        </LinearLayout>
+
+        <com.hsalf.smilerating.SmileRating
+            android:id="@+id/smile_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:layerType="none"
+            android:layout_marginBottom="40dp"
+            />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:fontFamily="@font/josefinsans_light" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/finish_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorTen"
+        app:cardCornerRadius="20dp">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FINISH"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:focusable="false"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/josefinsans_light"
+        android:textStyle="bold"/>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

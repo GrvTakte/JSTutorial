@@ -1,0 +1,72 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<p>Every web page resides inside a browser window which can be considered as an object.</p>
+<p>A Document object represents the HTML document that is displayed in that window. The Document object has various properties that refer to other objects which allow access to and modification of document content.</p>
+<p>The way a document content is accessed and modified is called the&nbsp;<strong>Document Object Model</strong>, or&nbsp;<strong>DOM</strong>. The Objects are organized in a hierarchy. This hierarchical structure applies to the organization of objects in a Web document.</p>
+<ul class="list">
+    <li>
+        <p><strong>Window object</strong>&nbsp;&minus; Top of the hierarchy. It is the outmost element of the object hierarchy.</p>
+    </li>
+    <li>
+        <p><strong>Document object</strong>&nbsp;&minus; Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.</p>
+    </li>
+    <li>
+        <p><strong>Form object</strong>&nbsp;&minus; Everything enclosed in the &lt;form&gt;...&lt;/form&gt; tags sets the form object.</p>
+    </li>
+    <li>
+        <p><strong>Form control elements</strong>&nbsp;&minus; The form object contains all the elements defined for that object such as text fields, buttons, radio buttons, and checkboxes.</p>
+    </li>
+</ul>
+<p>Here is a simple hierarchy of a few important objects &minus;</p>
+<p><img src="html_dom.jpg" alt="HTML DOM" /></p>
+<p>There are several DOMs in existence. The following sections explain each of these DOMs in detail and describe how you can use them to access and modify document content.</p>
+<ul class="list">
+    <li>
+        <p><a>The Legacy DOM</a>&nbsp;&minus; This is the model which was introduced in early versions of JavaScript language. It is well supported by all browsers, but allows access only to certain key portions of documents, such as forms, form elements, and images.</p>
+    </li>
+    <li>
+        <p><a>The W3C DOM</a>&nbsp;&minus; This document object model allows access and modification of all document content and is standardized by the World Wide Web Consortium (W3C). This model is supported by almost all the modern browsers.</p>
+    </li>
+    <li>
+        <p><a>The IE4 DOM</a>&nbsp;&minus; This document object model was introduced in Version 4 of Microsoft's Internet Explorer browser. IE 5 and later versions include support for most basic W3C DOM features.</p>
+    </li>
+</ul>
+<h2>DOM compatibility</h2>
+<p>If you want to write a script with the flexibility to use either W3C DOM or IE 4 DOM depending on their availability, then you can use a capability-testing approach that first checks for the existence of a method or property to determine whether the browser has the capability you desire. For example &minus;</p>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">if</span> <span class="pun">(</span><span class="pln">document</span><span class="pun">.</span><span class="pln">getElementById</span><span class="pun">)</span> <span class="pun">{</span>
+   <span class="com">// If the W3C method exists, use it</span>
+<span class="pun">}</span>
+
+<span class="kwd">else</span> <span class="kwd">if</span> <span class="pun">(</span><span class="pln">document</span><span class="pun">.</span><span class="pln">all</span><span class="pun">)</span> <span class="pun">{</span>
+   <span class="com">// If the all[] array exists, use it</span>
+<span class="pun">}</span>
+
+<span class="kwd">else</span> <span class="pun">{</span>
+   <span class="com">// Otherwise use the legacy DOM</span>
+<span class="pun">}</span></pre>
+<p><br /><br /></p>
+</body>
+</html>

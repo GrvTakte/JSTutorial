@@ -1,0 +1,114 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+    pre{
+    background-color: #888785;
+    color: #ffffff
+    }
+    h2 {
+        color:#FFA700;
+    }
+    h3 {
+        color:#FFA700;
+    }
+    </style>
+</head>
+
+<body>
+<p>JavaScript can be implemented using JavaScript statements that are placed within the <b>&lt;script&gt;... &lt;/script&gt;</b> HTML tags in a web page.</p>
+<p>You can place the <b>&lt;script&gt;</b> tags, containing your JavaScript, anywhere within your web page, but it is normally recommended that you should keep it within the <b>&lt;head&gt;</b> tags.</p>
+<p>The &lt;script&gt; tag alerts the browser program to start interpreting all the text between these tags as a script. A simple syntax of your JavaScript will appear as follows.</p>
+<pre class="prettyprint notranslate">
+&lt;script&gt;
+   JavaScript code
+&lt;/script&gt;
+</pre>
+<p>The script tag takes two important attributes &minus;</p>
+<ul class="list">
+    <li><p><b>Language</b> &minus; This attribute specifies what scripting language you are using. Typically, its value will be javascript. Although recent versions of HTML (and XHTML, its successor) have phased out the use of this attribute.</p></li>
+    <li><p><b>Type</b> &minus; This attribute is what is now recommended to indicate the scripting language in use and its value should be set to "text/javascript".</p></li>
+</ul>
+<p>So your JavaScript segment will look like &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;script language="javascript" type="text/javascript"&gt;
+   JavaScript code
+&lt;/script&gt;
+</pre>
+<h2>Your First JavaScript Script</h2>
+<p>Let us take a sample example to print out "Hello World". We added an optional HTML comment that surrounds our JavaScript code. This is to save our code from a browser that does not support JavaScript. The comment ends with a "//--&gt;". Here "//" signifies a comment in JavaScript, so we add that to prevent a browser from reading the end of the HTML comment as a piece of JavaScript code. Next, we call a function <b>document.write</b> which writes a string into our HTML document.</p>
+<p>This function can be used to write text, HTML, or both. Take a look at the following code.</p>
+<pre class="prettyprint notranslate tryit">
+&lt;html&gt;
+   &lt;body&gt;
+      &lt;script language="javascript" type="text/javascript"&gt;
+         &lt;!--
+            document.write("Hello World!")
+         //--&gt;
+      &lt;/script&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>This code will produce the following result &minus;</p>
+<pre class="result notranslate">
+Hello World!
+</pre>
+<h2>Whitespace and Line Breaks</h2>
+<p>JavaScript ignores spaces, tabs, and newlines that appear in JavaScript programs. You can use spaces, tabs, and newlines freely in your program and you are free to format and indent your programs in a neat and consistent way that makes the code easy to read and understand.</p>
+<h2>Semicolons are Optional</h2>
+<p>Simple statements in JavaScript are generally followed by a semicolon character, just as they are in C, C++, and Java. JavaScript, however, allows you to omit this semicolon if each of your statements are placed on a separate line. For example, the following code could be written without semicolons.</p>
+<pre class="prettyprint notranslate">
+&lt;script language="javascript" type="text/javascript"&gt;
+   &lt;!--
+      var1 = 10
+      var2 = 20
+   //--&gt;
+&lt;/script&gt;
+</pre>
+<p>But when formatted in a single line as follows, you must use semicolons &minus;</p>
+<pre class="prettyprint notranslate">
+&lt;script language="javascript" type="text/javascript"&gt;
+   &lt;!--
+      var1 = 10; var2 = 20;
+   //--&gt;
+&lt;/script&gt;
+</pre>
+<p><b>Note</b> &minus; It is a good programming practice to use semicolons.</p>
+<h2>Case Sensitivity</h2>
+<p>JavaScript is a case-sensitive language. This means that the language keywords, variables, function names, and any other identifiers must always be typed with a consistent capitalization of letters.</p>
+<p>So the identifiers <b>Time</b> and <b>TIME</b> will convey different meanings in JavaScript.</p>
+<p><b>NOTE</b> &minus; Care should be taken while writing variable and function names in JavaScript.</p>
+<h2>Comments in JavaScript</h2>
+<p>JavaScript supports both C-style and C++-style comments, Thus &minus;</p>
+<ul class="list">
+    <li><p>Any text between a // and the end of a line is treated as a comment and is ignored by JavaScript.</p></li>
+    <li><p>Any text between the characters /* and */ is treated as a comment. This may span multiple lines.</p></li>
+    <li><p>JavaScript also recognizes the HTML comment opening sequence &lt;!--. JavaScript treats this as a single-line comment, just as it does the // comment.</p></li>
+    <li><p>The HTML comment closing sequence --&gt; is  not recognized by JavaScript so it should be written as //--&gt;.</p></li>
+</ul>
+<h3>Example</h3>
+<p>The following example shows how to use comments in JavaScript.</p>
+<pre class="prettyprint notranslate">
+&lt;script language="javascript" type="text/javascript"&gt;
+   &lt;!--
+
+      // This is a comment. It is similar to comments in C++
+
+      /*
+      * This is a multiline comment in JavaScript
+      * It is very similar to comments in C Programming
+      */
+
+   //--&gt;
+&lt;/script&gt;
+</pre>
+
+</body>
+</html>
