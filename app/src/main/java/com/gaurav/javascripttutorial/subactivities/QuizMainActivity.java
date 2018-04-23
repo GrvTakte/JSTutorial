@@ -167,6 +167,10 @@ public class QuizMainActivity extends AppCompatActivity {
         public void onRewardedVideoAdFailedToLoad(int i) {
             loadRewardVideoAd();
         }
+
+        @Override
+        public void onRewardedVideoCompleted() {
+        }
     };
 
 

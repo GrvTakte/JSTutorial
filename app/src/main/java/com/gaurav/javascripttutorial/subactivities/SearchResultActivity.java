@@ -46,6 +46,7 @@ import com.gaurav.javascripttutorial.beginnerSubFragments.FragmentSyntax;
 import com.gaurav.javascripttutorial.beginnerSubFragments.FragmentVariables;
 import com.gaurav.javascripttutorial.beginnerSubFragments.FragmentWhileloop;
 
+
 public class SearchResultActivity extends AppCompatActivity {
 
     @Override

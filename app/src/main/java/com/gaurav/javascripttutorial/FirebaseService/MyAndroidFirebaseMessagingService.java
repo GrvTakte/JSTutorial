@@ -53,32 +53,5 @@ public class MyAndroidFirebaseMessagingService extends FirebaseMessagingService 
 
         NotificationManager manager = (NotificationManager) this.getSystemService(NOTIFICATION_SERVICE);
         manager.notify(1,builder.build());
-
-       /* Intent intent = new Intent( this , MainActivity.class );
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent resultIntent = PendingIntent.getActivity( this , 0, intent,
-                PendingIntent.FLAG_ONE_SHOT);
-
-        NotificationCompat.BigTextStyle bigTextStyle = new NotificationCompat.BigTextStyle();
-        bigTextStyle.setBigContentTitle(title);
-        bigTextStyle.bigText(messageBody);
-
-        Uri notificationSoundURI = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-
-        Notification mNotificationBuilder = new Notification.Builder(this)
-               .setContentTitle("JS Tutorial")
-               .setContentText(messageBody)
-               .setSmallIcon(R.mipmap.logo)
-               .setAutoCancel(true)
-               .setPriority(Notification.PRIORITY_MAX)
-               .setVibrate(new long[]{100,500,100,500,100,500})
-               .setSound(notificationSoundURI)
-               .setContentInfo(messageBody)
-                .setContentIntent(resultIntent)
-               .setStyle(new Notification.BigTextStyle().bigText(messageBody)).build();
-
-        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-        notificationManager.notify(0, mNotificationBuilder); */
     }
 }

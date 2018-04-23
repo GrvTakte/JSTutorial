@@ -43,7 +43,6 @@ public class CustomLeaderBoardAdapter extends ArrayAdapter<LeaderBoard> {
         }else {
             return number*10;
         } */
-
         return leaderBoards.size();
     }
 

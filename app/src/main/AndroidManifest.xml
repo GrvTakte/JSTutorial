@@ -9,6 +9,12 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
 
+    <uses-permission android:name="com.gaurav.javascript.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -39,7 +45,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api"/>
         <!-- Sub activities -->
         <activity android:name=".MainActivity" android:theme="@style/MainTheme" android:screenOrientation="portrait"/>
         <activity android:name=".subactivities.BeginnerActivity" android:theme="@style/AppTheme" android:screenOrientation="portrait"/>
@@ -54,6 +62,7 @@
         <activity android:name=".communityBlog.CommunityBlog" android:theme="@style/AppTheme" android:screenOrientation="portrait"/>
         <activity android:name=".subactivities.QuizLeaderBoard" android:theme="@style/MainTheme" android:screenOrientation="portrait"/>
         <activity android:name=".subactivities.SearchResultActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".subactivities.MapActivity" android:theme="@style/AppTheme"/>
 
         <service
             android:name=".FirebaseService.MyAndroidFirebaseMessagingService">

@@ -21,6 +21,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.gaurav.javascripttutorial.R;
 import com.gaurav.javascripttutorial.SplashScreen;
+import com.gaurav.javascripttutorial.subactivities.MapActivity;
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
@@ -56,6 +57,7 @@ public class AccountFragment extends Fragment {
     TextView userEmail;
 
     Button logout;
+    Button maps_button;
 
     FirebaseAuth auth;
     FirebaseUser user;
@@ -69,6 +71,7 @@ public class AccountFragment extends Fragment {
         user = auth.getCurrentUser();
 
         logout = (Button) accountView.findViewById(R.id.logout);
+        maps_button = (Button) accountView.findViewById(R.id.maps_button);
 
         userImage = (CircleImageView) accountView.findViewById(R.id.account_user_image);
         userName = (TextView) accountView.findViewById(R.id.account_user_name);
@@ -103,6 +106,14 @@ public class AccountFragment extends Fragment {
                         getActivity().finish();
                     }
                 },3000);
+            }
+        });
+
+        maps_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MapActivity.class);
+                startActivity(intent);
             }
         });
     }
